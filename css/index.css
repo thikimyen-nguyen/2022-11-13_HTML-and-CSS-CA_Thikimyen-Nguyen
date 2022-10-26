@@ -1,0 +1,124 @@
+/* Global Style */
+.cover{
+    background: url(../images/coverFF.jpeg) no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;    
+    border-radius: 5px;
+    position: relative;
+    opacity: 0.4;
+}
+.cover_content{
+    position: absolute;
+}
+.blockbuster{
+    font-family:'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
+    color: #BFBFB7;
+}
+   
+.showmore{
+    color: #EDEDED;
+}
+
+    /* Mobile */
+@media only screen and (max-width: 640px) {
+    .cover {
+        width: 100%;
+        min-height: 193px;
+        margin-bottom: 30px;
+    }
+    .cover_content{
+        padding-left: 20px;
+        top:100px;
+    }
+    .blockbuster{  
+        font-size: 15px;
+        color: #BFBFB7;
+    }
+    .showmore_icon{
+        font-size: 12px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .products img{
+        width: 148px;
+        height: 237px;
+    }
+    .products h4{
+        grid-column: 1/ span 2;
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 641px) and (max-width: 1007px){
+    .cover {
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 30px;
+       
+    }
+    .cover_content{
+        padding-left: 30px;
+        top:180px;
+    }
+    .blockbuster{  
+        font-size: 25px;
+        color: #BFBFB7;
+    }
+    .showmore_icon{
+        font-size: 15px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .products img{
+        width: 148px;
+        height: 237px;
+    }
+    .products h4{
+        grid-column: 1/ span 4;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1008px){
+    .cover {
+        width: 100%;
+        min-height: 650px;
+        margin-bottom: 50px;
+       
+    }
+    .cover_content{
+        padding-left: 30px;
+        top:350px;
+    }
+    .blockbuster{  
+        font-size: 32px;
+        color: #BFBFB7;
+    }
+    .showmore_icon{
+        font-size: 20px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 35px;
+        justify-content: left;
+    }
+    .products img{
+        width: 230px;
+        height: 368px;
+    }
+    .products h4{
+        grid-column: 1/ span 6;
+    }
+}
+

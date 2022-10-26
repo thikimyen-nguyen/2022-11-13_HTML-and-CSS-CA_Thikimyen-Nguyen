@@ -1,0 +1,20 @@
+/* About Us */
+.main_background{
+    background-color: #EDEDED;
+    color: black;
+    margin: 0px 0px 50px 0px;
+}
+.flex_container{
+    display: flex;
+}
+.flex_container > * {
+    flex: 1;
+    margin: 50px 115px 50px 115px;
+}
+.title_slogan{
+    text-align: center;
+    padding-top: 50px;
+}
+.flex_container p{
+    line-height: 160%;
+}
