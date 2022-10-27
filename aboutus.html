@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aboutus.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,52 +14,56 @@
     <title>Square Eyes | About Us</title>
 </head>
 <body>
-    <header class="flex" >
-        <div class="flex1">
+    <header>
+        <div class="header_logo">
             <a href="index.html"><img src="images/logo.png" alt="square eyes logo" class="logo"></a>
         </div>
-        <nav class="flex2">
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav>
+            <ul class="header_navbar" >
+                <li><a href="index.html" class="header_active">Home</a></li>
                 <li><a href="genres.html">Genres</a></li>
                 <li><a href="collections.html">Collections</a></li>
             </ul>
         </nav>
-        <div class="flex3">
-            <i class="fas fa-cart-shopping" style="color: #3DC9DA; font-size: 70px;"></i>     
+        <div class="header_cart">
+            <i class="fas fa-cart-shopping" style="color: #3DC9DA;"></i>     
         </div>
     </header>
     <main class="main_background">
         <div class="title_slogan">
-            <h1>We are</h1>
+            <h1>Our Mission is</h1>
             <h1>Connecting Film - Lovers</h1>
         </div> 
-        <section class="flex_container">
-            <div>
-                <h2>Our Film-Watchers</h2>
-                <p>We show you a video streaming website with high-quality and trending videos. You can easily discover great collections or browse through different categories to find films. You can purchase videos right away and directly from Film-makers and watch them online.</p>
-                <img style="width: 567px;" src="images/ourfilmwatcher.jpg" alt="happy family watching films">
-            </div>
-            <div>
-                <img style="width: 605px;" src="images/ourfilmmaker.jpg" alt="film makers making films">
-                <h2>Our Film-Lovers</h2>
-                <p>We are here to support small and potential filmmakers. We connect you to our film-lovers by presenting them with your high-end and interesting movies. We believe  this is a place where talented and creative minds can tell their stories to people who love to explore out-of-the box ideas.</p>
-            </div>
-        </section>
-        
+        <div class="about_image1">
+            <img src="images/ourfilmwatcher.png" alt="happy family watching films at home">
+        </div>
+        <div class="about_info1">
+            <h2>Our Film-Watchers</h2>
+            <p>We show you a video streaming website with high-quality and trending videos. You can easily discover great collections or browse through different categories to find films. You can purchase videos right away and directly from Film-makers and watch them online.</p>
+        </div>
+        <div class="about_image2">
+            <img src="images/ourfilmmaker.png" alt="film makers making films">
+        </div>
+        <div class="about_info2">
+            <h2>Our Film-Lovers</h2>
+            <p>We are here to support small and potential filmmakers. We connect you to our film-lovers by presenting them with your high-end and interesting movies. We believe  this is a place where talented and creative minds can tell their stories to people who love to explore out-of-the box ideas.</p>
+        </div>
     </main>
     <footer>
-        <div class="footer_nav" >
-            <a href="index.html"><img src="images/logo.png" alt="square eyes logo" class="logo"></a>
+        <section class="footer_nav" >
+            <div class="header_logo">
+                <a href="index.html"><img src="images/logo.png" alt="square eyes logo" class="logo"></a>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="aboutus.html" class="footer_active">About Us</a></li>
+                <ul class="footer_navbar" >
+                    <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div> 
+        </section>
         <p>&copy 2022 SquareEyes AS (org.no: 000000-0000). All rights reserved.</p>
     </footer>
+
     
 </body>
 </html>

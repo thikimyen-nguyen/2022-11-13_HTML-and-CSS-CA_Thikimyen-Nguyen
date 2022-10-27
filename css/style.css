@@ -70,6 +70,9 @@ header {
 footer ul, header ul{
     padding: 0px;
 }
+.products h4{
+    margin: 0px;
+}
 
 /* Mobile */
 @media only screen and (max-width: 640px){
@@ -97,21 +100,20 @@ footer ul, header ul{
         grid-gap: 10px;
        
     }
-    header nav li {
-        display: inline;
-        font-size: 12px;
-        padding-left: 15px;
-    }
-    footer nav li {
+    header nav li, footer nav li {
         display: inline;
         font-size: 12px;
         padding: 10px;
     }
-    .header_navbar{
-        margin-left: 15px;
-    }
+
     .header_cart{
         font-size: 20px;
+    }
+    .header_navbar{
+        margin-left: 20px;
+    }
+    .footer_navbar {
+        margin-left: 5px;
     }
    
 }
@@ -131,10 +133,10 @@ footer ul, header ul{
     }
     
     footer p{
-        font-size: 13px;
+        font-size: 10px;
     }
     footer{
-        width: 400px;
+        width: 320px;
     }
     .logo{
         width: 84px;
@@ -155,6 +157,12 @@ footer ul, header ul{
     
     .header_cart{
         font-size: 50px;
+    }
+    .header_navbar{
+        margin-left: 30px;
+    }
+    .footer_navbar {
+        margin-left: 20px;
     }
     
 }
@@ -199,6 +207,12 @@ footer ul, header ul{
     }
     .header_cart{
         font-size: 70px;
+    }
+    .header_navbar{
+        margin-left: 60px;
+    }
+    .footer_navbar {
+        margin-left: 50px;
     }
     
 }
