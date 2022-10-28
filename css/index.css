@@ -1,4 +1,5 @@
 /* Global Style */
+
 .cover{
     background: url(../images/coverFF.jpeg) no-repeat;
     background-size: cover;
@@ -19,6 +20,7 @@
 .showmore{
     color: #EDEDED;
 }
+
 
     /* Mobile */
 @media only screen and (max-width: 640px) {

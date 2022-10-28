@@ -56,15 +56,14 @@ header {
 .header_cart {
     justify-content: end;  
 }
-.cta{
+
+.cta_blue{
+    font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
     background-color:  #3DC9DA;
     color: black;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
-    font-size: 36px;
     font-weight: 700;
     border-radius: 5px;
-    padding: 10px 50px;
     border-style: none;
 }
 footer ul, header ul{
@@ -82,7 +81,12 @@ footer ul, header ul{
     h2, h3{
         font-size: 13px;
     }
-
+    p{
+        font-size: 13px;
+    }
+    .cta_blue{
+        font-size: 15px;
+    }
     footer p{
         font-size: 6px;
         word-spacing: 0.2em;
@@ -115,6 +119,11 @@ footer ul, header ul{
     .footer_navbar {
         margin-left: 5px;
     }
+    .cta_blue{
+        width: 130px;
+        padding: 5px;
+        margin: 10px auto;
+    }
    
 }
 
@@ -131,7 +140,12 @@ footer ul, header ul{
         font-size: 20px;
         font-weight: 600;
     }
-    
+    p{
+        font-size: 20px;
+    }
+    .cta_blue{
+        font-size: 20px;
+    }
     footer p{
         font-size: 10px;
     }
@@ -142,6 +156,7 @@ footer ul, header ul{
         width: 84px;
         height: 45px;
     }
+   
     body{
         margin: 20px 50px 0px 50px;
         display: grid;
@@ -164,6 +179,11 @@ footer ul, header ul{
     .footer_navbar {
         margin-left: 20px;
     }
+    .cta_blue{
+        width: 200px;
+        padding: 8px;
+        margin: 10px auto;
+    }
     
 }
 
@@ -183,7 +203,12 @@ footer ul, header ul{
         font-size: 20px;
         font-weight: 600;
     }
-    
+    p{
+        font-size: 20px;
+    }
+    .cta_blue{
+        font-size: 36px;
+    }
     footer p{
         font-size: 20px;   
     }
@@ -194,6 +219,7 @@ footer ul, header ul{
         height: 110px;
         width: 206px;
     }
+    
     body{
         margin: 30px 115px 0px 115px;
         display: grid;
@@ -213,6 +239,11 @@ footer ul, header ul{
     }
     .footer_navbar {
         margin-left: 50px;
+    }
+    .cta_blue{
+        width: 300px;
+        padding: 10px;
+        margin: 10px auto;
     }
     
 }
