@@ -19,6 +19,7 @@
 }
 .contact_image{
     grid-area: image;
+    margin: auto;
 }
 .address{
     grid-area: address;
@@ -58,6 +59,7 @@ input {
     }
     .contact_image{
         grid-area: image;
+        margin: auto;
     }
     .address{
         grid-area: address;
