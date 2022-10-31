@@ -112,8 +112,8 @@
     .products{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
-        gap: 35px;
         justify-content: left;
+        gap: 50px;
     }
     .products img{
         width: 230px;

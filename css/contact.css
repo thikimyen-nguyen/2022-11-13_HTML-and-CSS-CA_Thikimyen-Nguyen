@@ -1,5 +1,5 @@
 /* Global Style */
-.main_background1{
+main{
     background-color: #EDEDED;
     color: black;
 }
@@ -8,7 +8,7 @@
 /* Mobile */
 
 @media only screen and (max-width: 640px){
-.main_background1{
+.main_contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -42,13 +42,14 @@ form{
     grid-template-rows: auto;
 }
 input {
-    padding: 10px 0px;
+    padding: 8px 0px;
     margin-bottom: 15px;
+    font-size: small;
 }
 }
 /* Tablet */
 @media only screen and (min-width: 641px) and (max-width: 1007px){
-    .main_background1{
+    .main_contact{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
@@ -82,14 +83,15 @@ input {
         grid-template-rows: auto;
     }
     input, textarea {
-        padding: 7px 0px;
+        padding: 10px 0px;
         margin-bottom: 20px;
+        font-size: medium;
     }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
-    .main_background1{
+    .main_contact{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
@@ -126,5 +128,6 @@ input {
     input, textarea {
         padding: 10px 0px;
         margin-bottom: 20px;
+        font-size: large;
     }
 }
