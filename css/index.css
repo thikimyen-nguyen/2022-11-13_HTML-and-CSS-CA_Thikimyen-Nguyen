@@ -1,5 +1,4 @@
 /* Global Style */
-
 .cover{
     background: url(../images/coverFF.jpeg) no-repeat;
     background-size: cover;
@@ -17,9 +16,6 @@
     color: #BFBFB7;
 }
    
-.showmore{
-    color: #EDEDED;
-}
 
 
     /* Mobile */
@@ -49,6 +45,7 @@
     .products img{
         width: 148px;
         height: 237px;
+        border-radius: 10px;
     }
     .products h4{
         grid-column: 1/ span 2;
@@ -84,6 +81,7 @@
     .products img{
         width: 148px;
         height: 237px;
+        border-radius: 10px;
     }
     .products h4{
         grid-column: 1/ span 4;
@@ -118,6 +116,7 @@
     .products img{
         width: 230px;
         height: 368px;
+        border-radius: 10px;
     }
     .products h4{
         grid-column: 1/ span 6;

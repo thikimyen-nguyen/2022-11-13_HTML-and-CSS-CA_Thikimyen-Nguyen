@@ -1,35 +1,24 @@
 /* Global Style */
-main {
+main, 
+footer p {
     font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
     color: #EDEDED;
 }
 h1, h2, h3, h4, header, footer a{
     font-family: 'Roboto', sans-serif, Arial, Verdana, Tahoma, Georgia;
 }
-footer p {
-    font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
-    color: #EDEDED ;
-}
 
-body a {
-    color: #EDEDED ;
+body a, header a:hover, .header_active {
+    color: #EDEDED;
 }
-footer a:hover{
+footer a:hover, .footer_active {
     text-decoration: underline;
 }
 
-.footer_active{
-    text-decoration: underline;
-}
 header a{
     color: #3DC9DA;
 }
-header a:hover{
-    color:#EDEDED;
-}
-.header_active {
-    color:#EDEDED;
-}
+
 a{
     text-decoration: none;
 }
@@ -73,15 +62,13 @@ footer ul, header ul{
     margin: 0px;
 }
 
+
 /* Mobile */
 @media only screen and (max-width: 640px){
     h1, h4 {
         font-size: 15px;
     }
-    h2, h3{
-        font-size: 13px;
-    }
-    p{
+    h2, h3, p{
         font-size: 13px;
     }
     .cta_blue{
@@ -203,15 +190,13 @@ footer ul, header ul{
         font-size: 20px;
         font-weight: 600;
     }
-    p{
+    p, footer p{
         font-size: 20px;
     }
     .cta_blue{
         font-size: 36px;
     }
-    footer p{
-        font-size: 20px;   
-    }
+    
     footer{
         width: 610px;
     }
