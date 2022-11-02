@@ -2,17 +2,6 @@
 .selling_point{
     color:#3DC9DA;
 }
-
-/* Mobile */
-@media only screen and (max-width: 640px){
-.product_image_desktop{
-    display: none;
-}
-.product_image_mobile {
-    width: 100%;
-    margin: auto;
-    border-radius: 5px;
-}
 .product_detail_title{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -21,12 +10,8 @@
     column-gap: 15px;
 }
 .title{
-    grid-column: 1/span2;
+    grid-column: 1/ span2;
     margin: 0px;
-}
-#review{
-    font-size: 13px;
-    align-self: center;
 }
 .product_detail_title p{
     margin: 0px;
@@ -37,7 +22,28 @@
     margin: 10px 10px 50px 10px;
     column-gap: 15px;
 }
-    
+.product_image_mobile, .product_image_desktop {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+.product_video img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 640px){
+    .product_image_desktop{
+        display: none;
+    }
+
+    #review{
+        font-size: 13px;
+        align-self: center;
+    }  
 }
 
 /* Tablet */
@@ -45,73 +51,27 @@
     .product_image_desktop{
         display: none;
     }
-    .product_image_mobile {
-        width: 100%;
-        margin: auto;
-        border-radius: 5px;
-    }
-    .product_detail_title{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        margin: 10px;
-        row-gap: 10px;
-        column-gap: 15px;
-    }
-    .title{
-        grid-column: 1/span2;
-        margin: 0px;
-    }
+    
     #review{
         font-size: 20px;
         align-self: center;
-    }
-    .product_detail_title p{
-        margin: 0px;
-    }
-    .product_detail_info{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 10px 10px 50px 10px;
-        column-gap: 15px;
     }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
-    .product_image_desktop{
-        width: 100%;
-        border-radius: 10px;
-    }
-    p {
-        line-height: 200%;
-        }
     .product_image_mobile {
         display: none;
     }
-    .product_detail_title{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        margin: 10px;
-        row-gap: 10px;
-        column-gap: 15px;
+    p {
+        line-height: 200%;
     }
-    .title{
-        grid-column: 1/ span2;
-        margin: 0px;
-    }
+
     #review{
         font-size: 20px;
         align-self: center;
     }
-    .product_detail_title p{
-        margin: 0px;
-    }
-    .product_detail_info{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 10px 10px 50px 10px;
-        column-gap: 15px;
-    }
+   
     .product_detail{
         display: flex;
         margin: 100px;
