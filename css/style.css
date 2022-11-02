@@ -65,6 +65,21 @@ header {
     border-radius: 5px;
     border-style: none;
 }
+.cta_price{
+    font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
+    background-color: black;
+    color:#EDEDED;
+    border-radius: 8px;
+    border-color: #3DC9DA;
+}
+.price_option button:hover{
+    background-color: #BFBFB7;
+}
+/* Reference for button color change on click https://codesandbox.io/s/suspicious-maria-135rel?file=/index.html&fbclid=IwAR0l-OTC225WXqrSxFjr1PyNPjiq44fHYrXnDLRiEqosNdyyvpQmXoXvGMc */
+.price_option button:focus{
+    background-color: #BFBFB7;
+    color: black;
+}
 footer ul, header ul{
     padding: 0px;
 }
@@ -119,7 +134,11 @@ footer ul, header ul{
     .footer_navbar {
         margin-left: 5px;
     }
-   
+    .cta_price{
+        padding: 5px 0px;
+        font-size: 15px;
+        width: 50px;
+    }
 }
 
 /* Tablet */
@@ -175,6 +194,12 @@ footer ul, header ul{
     .footer_navbar {
         margin-left: 20px;
     }
+    .cta_price{
+        padding: 8px 0px;
+        font-size: 20px;
+        width: 80px;
+        
+    }
     
 }
 
@@ -194,7 +219,10 @@ footer ul, header ul{
         font-size: 20px;
         font-weight: 600;
     }
-    p, footer p{
+    p{
+        font-size: 30px;
+    }
+    footer p{
         font-size: 20px;
     }
     .cta_blue, .cta_grey{
@@ -230,7 +258,11 @@ footer ul, header ul{
     .footer_navbar {
         margin-left: 50px;
     }
-    
+    .cta_price{
+        padding: 10px 0px;
+        font-size: 36px;
+        width: 100px;
+    }
 }
 
 

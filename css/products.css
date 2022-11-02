@@ -32,7 +32,17 @@
     margin: auto;
     border-radius: 5px;
 }
+.price_option{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+}
 
+.purchase_button{
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+}
 
 /* Mobile */
 @media only screen and (max-width: 640px){
@@ -44,6 +54,14 @@
         font-size: 13px;
         align-self: center;
     }  
+    .price_option{
+        column-gap: 15px;
+        margin-left: 10px;
+    }
+    .price_option p{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
 }
 
 /* Tablet */
@@ -51,10 +69,17 @@
     .product_image_desktop{
         display: none;
     }
-    
     #review{
         font-size: 20px;
         align-self: center;
+    }
+    .price_option{
+        column-gap: 15px;
+        margin-left: 10px;
+    }
+    .price_option p{
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
 }
 
@@ -79,5 +104,15 @@
     }
     .product_detail > *{
         flex: 1;
+    }
+    .price_option{
+        column-gap: 25px;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .price_option p{
+        margin-top: 5px;
+        font-size: 24px;
+        margin-bottom: 80px;
     }
 }

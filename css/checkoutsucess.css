@@ -17,6 +17,9 @@ main{
     #success_icon{
         font-size: 30px;
     }
+    .product_image_small{
+        width: 57px ;
+    }
 }
 
 /* Tablet */
@@ -28,6 +31,9 @@ main{
     #success_icon{
         font-size: 40px;
     }
+    .product_image_small{
+        width: 100px ;
+    }
 }
 
 /* Desktop */
@@ -38,5 +44,8 @@ main{
     }
     #success_icon{
         font-size: 80px;
+    }
+    .product_image_small{
+        width: 150px ;
     }
 }
