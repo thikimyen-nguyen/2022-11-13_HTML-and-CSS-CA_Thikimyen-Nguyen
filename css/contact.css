@@ -3,7 +3,9 @@ main{
     background-color: #EDEDED;
     color: black;
 }
-
+address{
+    font-style: normal;
+}
 
 /* Mobile */
 
@@ -21,7 +23,7 @@ main{
     grid-area: image;
     margin: auto;
 }
-.address{
+address{
     grid-area: address;
     margin: auto;
 }
@@ -62,7 +64,7 @@ input {
         grid-area: image;
         margin: auto;
     }
-    .address{
+    address{
         grid-area: address;
         margin: auto;
     }
@@ -106,7 +108,7 @@ input {
         align-self: center;
         margin: auto;
     }
-    .address{
+    address{
         grid-area: address;
        
     }
