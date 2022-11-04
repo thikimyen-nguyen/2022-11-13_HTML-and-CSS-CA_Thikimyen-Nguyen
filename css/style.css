@@ -76,7 +76,7 @@ header {
     background-color: #BFBFB7;
 }
 /* Reference for button color change on click https://codesandbox.io/s/suspicious-maria-135rel?file=/index.html&fbclid=IwAR0l-OTC225WXqrSxFjr1PyNPjiq44fHYrXnDLRiEqosNdyyvpQmXoXvGMc */
-.price_option button:focus{
+.price_option button:focus {
     background-color: #BFBFB7;
     color: black;
 }
@@ -136,7 +136,7 @@ footer ul, header ul{
     }
     .cta_price{
         padding: 5px 0px;
-        font-size: 15px;
+        font-size: 13px;
         width: 50px;
     }
 }
