@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3bd36773a0.js" crossorigin="anonymous"></script>
+    <title>Square Eyes | Check out</title>
+</head>
+<body>
+    <header>
+        <div class="header_logo">
+            <a href="index.html"><img src="images/logo.png" alt="square eyes logo" class="logo"></a>
+        </div>
+        <nav>
+            <ul class="header_navbar" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Genres/action.html">Genres</a></li>
+                <li><a href="Collections/collections.html">Collections</a></li>
+            </ul>
+        </nav>
+        <div class="header_cart">
+            <a href="yourcart.html"><i class="fas fa-cart-shopping"></i></a>     
+        </div>
+    </header>
+    <main> 
+        <h1>CHECK OUT</h1>
+        <section>
+            <h2>PAYMENT INFORMATION</h2>
+            <form method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="birthday">Date of Birth</label>
+                <input type="date" name="birthday" id="birthday">
+                <p>You can create an account during check out</p>
+                <label for="password">Password (optional)</label>
+                <input type="password" name="password" id="password">
+            </form>
+
+        </section>
+        <section>
+            <h2>PAYMENT METHOD</h2>
+            <div class="price_option">
+                <button class="cta_price">Master</button>
+                <button class="cta_price">Visa</button>
+            </div>
+            <form method="post" >
+                <label for="cardnumber">Card Number</label>
+                <input type="number" name="cardnumber" id="cardnumber">
+                <label for="cardname">Name on card</label>
+                <input type="text" name="cardname" id="cardname">
+                <div class="date_on_card">
+                    <div>
+                        <label for="expireddate">Expired Date</label>
+                        <input type="text" name="expireddate" id="expireddate" value="MM/YY">
+                    </div>
+                    <div>
+                        <label for="cvc">CVC</label>
+                        <input type="number" name="cvc" id="cvc" value="123">
+                    </div> 
+                </div>
+            </form>
+        </section>
+        <div class="checkout_cta">
+            <a href="index.html" class="cta_grey">Continue Shopping</a>
+            <a href="checkoutsucess.html" class="cta_blue">Purchase</a>
+        </div>
+    </main>
+    <footer>
+        <section class="footer_nav" >
+            <div class="header_logo">
+                <a href="index.html"><img src="images/logo.png" alt="square eyes logo" class="logo"></a>
+            </div>
+            <nav>
+                <ul class="footer_navbar" >
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <p>&copy 2022 SquareEyes AS (org.no: 000000-0000). All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

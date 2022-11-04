@@ -41,6 +41,7 @@ main{
 .product_price{
     grid-area: price;
 }
+/* reference for font weight at https://www.w3schools.com/CSSREF/pr_font_weight.php */
 p.price_bold{
     font-weight: 900;
 }

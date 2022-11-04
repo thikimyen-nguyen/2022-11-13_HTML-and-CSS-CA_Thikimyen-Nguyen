@@ -6,7 +6,9 @@ main{
 address{
     font-style: normal;
 }
-
+form{
+    display: grid;
+}
 /* Mobile */
 
 @media only screen and (max-width: 640px){
@@ -39,10 +41,7 @@ img{
 p{
     line-height: 80%;
 }
-form{
-    display: grid;
-    grid-template-rows: auto;
-}
+
 input {
     padding: 8px 0px;
     margin-bottom: 15px;
@@ -80,10 +79,7 @@ input {
     p{
         line-height: 80%;
     }
-    form{
-        display: grid;
-        grid-template-rows: auto;
-    }
+   
     input, textarea {
         padding: 10px 0px;
         margin-bottom: 20px;
@@ -123,10 +119,7 @@ input {
     p{
         line-height: 80%;
     }
-    form{
-        display: grid;
-        grid-template-rows: auto;
-    }
+  
     input, textarea {
         padding: 10px 0px;
         margin-bottom: 20px;
