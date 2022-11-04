@@ -47,6 +47,9 @@ input {
     margin-bottom: 15px;
     font-size: small;
 }
+.contact_cta{
+    margin: 15px 0px;
+}
 }
 /* Tablet */
 @media only screen and (min-width: 641px) and (max-width: 1007px){
@@ -84,6 +87,9 @@ input {
         padding: 10px 0px;
         margin-bottom: 20px;
         font-size: medium;
+    }
+    .contact_cta{
+        margin: 20px 0px;
     }
 }
 
@@ -124,5 +130,8 @@ input {
         padding: 10px 0px;
         margin-bottom: 20px;
         font-size: large;
+    }
+    .contact_cta{
+        margin: 30px 0px;
     }
 }
