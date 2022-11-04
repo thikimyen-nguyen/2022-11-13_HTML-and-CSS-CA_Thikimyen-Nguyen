@@ -41,7 +41,9 @@ main{
 .product_price{
     grid-area: price;
 }
-
+p.price_bold{
+    font-weight: 900;
+}
 
 
 /* Mobile */
@@ -95,6 +97,7 @@ main{
     .cart_info, .price_tag, .product_price{
         row-gap: 20px;
     }
+   
 }
 
 /* Desktop */
