@@ -1,6 +1,6 @@
 /* Global style */
 .selling_point{
-    color:#3DC9DA;
+    color: var(--blue);
 }
 .product_detail_title{
     display: grid;

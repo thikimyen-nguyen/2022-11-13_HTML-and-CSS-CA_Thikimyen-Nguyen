@@ -1,33 +1,40 @@
 /* Global Style */
+:root {
+    --blue: #3DC9DA;
+    --light_grey:  #EDEDED;
+    --grey: #BFBFB7;
+    --dark_grey: #6F6F6F;
+    --dark_theme: #373735;
+}
 main, 
 footer p {
     font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
-    color: #EDEDED;
+    color: var(--light_grey);
 }
 h1, h2, h3, h4, header, footer a{
     font-family: 'Roboto', sans-serif, Arial, Verdana, Tahoma, Georgia;
 }
 
 body a, header a:hover, .header_active {
-    color: #EDEDED;
+    color: var(--light_grey);
 }
 footer a:hover, .footer_active {
     text-decoration: underline;
 }
 
 header a, i{
-    color: #3DC9DA;
+    color: var(--blue);
 }
 
 a{
     text-decoration: none;
 }
 body{
-    background-color: #373735;  
+    background-color: var(--dark_theme);  
 }
 /* main background light grey*/
 .main_lightgrey{
-    background-color: #EDEDED;
+    background-color:var(--light_grey);
     color: black;
 }
 .footer_nav {
@@ -53,7 +60,7 @@ header {
 
 .cta_blue{
     font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
-    background-color:  #3DC9DA;
+    background-color:  var(--blue);
     color: black;
     text-decoration: none;
     font-weight: 700;
@@ -63,7 +70,7 @@ header {
 }
 .cta_grey{
     font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
-    background-color: #BFBFB7;
+    background-color: var(--grey);
     color: black;
     text-decoration: none;
     font-weight: 700;
@@ -73,16 +80,16 @@ header {
 .cta_price{
     font-family: 'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
     background-color: black;
-    color:#EDEDED;
+    color: var(--light_grey);
     border-radius: 8px;
-    border-color: #3DC9DA;
+    border-color: var(--blue);
 }
 .price_option button:hover{
-    background-color: #BFBFB7;
+    background-color: var(--grey);
 }
 /* Reference for button color change on click https://codesandbox.io/s/suspicious-maria-135rel?file=/index.html&fbclid=IwAR0l-OTC225WXqrSxFjr1PyNPjiq44fHYrXnDLRiEqosNdyyvpQmXoXvGMc */
 .price_option button:focus {
-    background-color: #BFBFB7;
+    background-color: var(--grey);
     color: black;
 }
 footer ul, header ul{
