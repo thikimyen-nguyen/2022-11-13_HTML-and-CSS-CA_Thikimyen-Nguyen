@@ -25,6 +25,11 @@ a{
 body{
     background-color: #373735;  
 }
+/* main background light grey*/
+.main_lightgrey{
+    background-color: #EDEDED;
+    color: black;
+}
 .footer_nav {
     display: grid;
     grid-template-columns: auto 1fr;

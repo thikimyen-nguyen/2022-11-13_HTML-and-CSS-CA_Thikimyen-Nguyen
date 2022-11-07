@@ -1,7 +1,5 @@
 /* Global Style */
 main{
-    background-color: #EDEDED;
-    color: black;
     display: flex;
     flex-direction: column;
     text-align: center;            

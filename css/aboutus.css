@@ -1,8 +1,4 @@
-/* Global style */
-main{
-    background-color: #EDEDED;
-    color: black;
-}
+
 
  /* Mobile */
  @media only screen and (max-width: 640px){

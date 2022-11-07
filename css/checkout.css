@@ -1,8 +1,5 @@
 /* Global Style */
-main{
-    background-color: #EDEDED;
-    color: black;        
-}
+
 form{
     display: grid;
     text-align: left;
