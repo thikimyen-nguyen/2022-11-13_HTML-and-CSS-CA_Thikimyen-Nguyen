@@ -22,7 +22,7 @@
     margin: 10px 10px 50px 10px;
     column-gap: 15px;
 }
-.product_image_mobile, .product_image_desktop {
+.product_image_mobile {
     width: 100%;
     margin: auto;
     border-radius: 10px;
@@ -98,13 +98,12 @@
     }
    
     .product_detail{
-        display: flex;
-        margin: 100px;
-        column-gap: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 50px;
+        column-gap: 50px;
     }
-    .product_detail > *{
-        flex: 1;
-    }
+    
     .price_option{
         column-gap: 25px;
         margin-top: 100px;
@@ -114,5 +113,8 @@
         margin-top: 5px;
         font-size: 24px;
         margin-bottom: 80px;
+    }
+    .product_detail img{
+        width: 100%;
     }
 }

@@ -7,23 +7,31 @@
     border-radius: 5px;
     position: relative;
     opacity: 0.4;
+    width: 100%;
+    margin-bottom: 30px;
 }
 .cover_content{
     position: absolute;
 }
 .blockbuster{
-    font-family:'Nunito', sans-serif, Arial, Verdana, Tahoma, Georgia;
+    font-family:'Nunito', Arial, Verdana, Tahoma, Georgia, sans-serif;
     color: var(--grey);
 }
-   
-
+.products img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.products{
+    display: grid;
+    justify-content: center;
+  
+}
 
     /* Mobile */
 @media only screen and (max-width: 640px) {
     .cover {
-        width: 100%;
         min-height: 193px;
-        margin-bottom: 30px;
     }
     .cover_content{
         padding-left: 20px;
@@ -31,23 +39,16 @@
     }
     .blockbuster{  
         font-size: 15px;
-        color: var(--grey);
     }
     .showmore_icon{
         font-size: 12px;
     }
     .products{
-        display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
-        justify-content: center;
         margin: 30px 0px;
     }
-    .products img{
-        width: 148px;
-        height: 237px;
-        border-radius: 10px;
-    }
+   
     .products h4{
         grid-column: 1/ span 2;
     }
@@ -57,10 +58,7 @@
 /* Tablet */
 @media only screen and (min-width: 641px) and (max-width: 1007px){
     .cover {
-        width: 100%;
         min-height: 350px;
-        margin-bottom: 30px;
-       
     }
     .cover_content{
         padding-left: 30px;
@@ -68,23 +66,16 @@
     }
     .blockbuster{  
         font-size: 25px;
-        color: var(--grey);
     }
     .showmore_icon{
         font-size: 15px;
     }
     .products{
-        display: grid;
         grid-template-columns: auto auto auto auto;
         gap: 20px;
-        justify-content: center;
         margin: 50px 0px;
     }
-    .products img{
-        width: 148px;
-        height: 237px;
-        border-radius: 10px;
-    }
+   
     .products h4{
         grid-column: 1/ span 4;
     }
@@ -93,34 +84,25 @@
 /* Desktop */
 @media only screen and (min-width: 1008px){
     .cover {
-        width: 100%;
         min-height: 650px;
-        margin-bottom: 50px;
        
     }
     .cover_content{
         padding-left: 40px;
-        top:350px;
+        top: 350px;
     }
     .blockbuster{  
         font-size: 32px;
-        color: var(--grey);
     }
     .showmore_icon{
         font-size: 20px;
     }
     .products{
-        display: grid;
         grid-template-columns: auto auto auto auto auto auto;
-        justify-content: left;
         gap: 50px;
         margin: 50px 0px;
     }
-    .products img{
-        width: 230px;
-        height: 368px;
-        border-radius: 10px;
-    }
+   
     .products h4{
         grid-column: 1/ span 6;
     }
