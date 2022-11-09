@@ -1,5 +1,8 @@
 
-
+/* Global Style */
+h1 span{
+    display: block;
+}
  /* Mobile */
  @media only screen and (max-width: 640px){
     .main_about{
