@@ -6,45 +6,37 @@ main li{
     text-decoration: underline;
     font-weight: bold;
 }
+.genres_nav li{
+    padding: 0px 10px 15px 0px;
+}
+.genres_nav{
+    display: grid;
+    padding: 0px;
+    margin: 10px 20px;
+}
 /* Mobile */
 @media only screen and (max-width: 640px){
     .genres_nav{
-        display: grid;
         grid-template-columns: repeat(4, auto);
         font-size: 13px;
-        padding: 0px;
-        margin: 10px 20px;
     }
-    .genres_nav li{
-        padding: 0px 10px 15px 0px;
-    }
+   
 }
 
 /* Tablet */
 @media only screen and (min-width: 641px) and (max-width: 1007px){
     .genres_nav{
-        display: grid;
         grid-template-columns: repeat(5, auto);
         font-size: 18px;
-        padding: 0px;
-        margin: 10px 20px;
     }
-    .genres_nav li{
-        padding: 0px 10px 15px 0px;
-    }
+  
 }
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
     .genres_nav{
-        display: grid;
         grid-template-columns: repeat(6, auto);
-        font-size: 18px;
-        padding: 0px;
-        margin: 10px 20px;
+        font-size: 24px;
     }
-    .genres_nav li{
-        padding: 0px 10px 15px 0px;
-    }
-   
+
 }
