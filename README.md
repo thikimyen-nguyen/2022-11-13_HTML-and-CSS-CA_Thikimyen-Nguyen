@@ -1,39 +1,25 @@
 # 2022-11-13_HTML-and-CSS-CA_Thikimyen-Nguyen
-# Project Title
-
-A simple overview of use/purpose.
+# Square Eyes - An online movie website
 
 ## Description
 
 An in-depth paragraph about your project and overview of use.
 
-## Getting Started
+## Design file
+You can find the figma design of this project in the asset folder or at this link:
+https://www.figma.com/file/EQORtXQPLEsfxZndwbq2YO/Design-CA?node-id=0%3A1
 
-### Dependencies
+## References (some are mentioned in the .css and .html files)
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
-* ex. Windows 10
+To adjust opacity of image
+https://css-tricks.com/snippets/css/transparent-background-images/
 
-### Installing
+To use icon
+https://www.w3schools.com/css/css_icons.asp
+https://fontawesome.com/
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Screen size
+https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
 
-### Executing program
 
-- hosted link 
 
-OR
-
-* How to run the program
-* Step-by-step bullets
-
-code blocks for commands
-
-## Help
-
-Any advice for common problems or issues.
-
-- command to run if the program contains helper info
-
-## Authors
