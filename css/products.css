@@ -50,10 +50,6 @@
         display: none;
     }
 
-    #review{
-        font-size: 13px;
-        align-self: center;
-    }  
     .price_option{
         column-gap: 15px;
         margin-left: 10px;
@@ -69,10 +65,7 @@
     .product_image_desktop{
         display: none;
     }
-    #review{
-        font-size: 20px;
-        align-self: center;
-    }
+  
     .price_option{
         column-gap: 15px;
         margin-left: 10px;
@@ -91,12 +84,6 @@
     p {
         line-height: 200%;
     }
-
-    #review{
-        font-size: 20px;
-        align-self: center;
-    }
-   
     .product_detail{
         display: grid;
         grid-template-columns: auto auto;

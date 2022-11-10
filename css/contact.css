@@ -5,50 +5,15 @@ address{
 form{
     display: grid;
 }
-/* Mobile */
-
-@media only screen and (max-width: 640px){
-.main_contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "image address"
-    "inquery inquery";
-    padding: 20px 15px;
-}
-.contact_image{
-    grid-area: image;
-    margin: auto;
-}
-address{
-    grid-area: address;
-    margin: auto;
-}
-.contact_inquery{
-    grid-area: inquery;
-    margin: 0px 10px;
-    font-size: 13px;
-}
-
 img{
-    width: 153px;
+    width: 100%;
 }
 p{
     line-height: 80%;
 }
 
-input {
-    padding: 8px 0px;
-    margin-bottom: 15px;
-    font-size: small;
-}
-.contact_cta{
-    margin: 15px 0px;
-}
-}
-/* Tablet */
-@media only screen and (min-width: 641px) and (max-width: 1007px){
+/* Mobile */
+@media only screen and (max-width: 1007px){
     .main_contact{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -57,6 +22,7 @@ input {
         "image address"
         "inquery inquery";
         padding: 20px 15px;
+        align-items: center;
     }
     .contact_image{
         grid-area: image;
@@ -68,26 +34,17 @@ input {
     }
     .contact_inquery{
         grid-area: inquery;
-        margin: 0px 100px;
+        margin: 0px 10px;
         font-size: 20px;
     }
-    
-    img{
-        width: 300px;
-    }
-    p{
-        line-height: 80%;
-    }
-   
     input, textarea {
         padding: 10px 0px;
         margin-bottom: 20px;
-        font-size: medium;
+        font-size: small;
     }
-    .contact_cta{
-        margin: 20px 0px;
-    }
+   
 }
+
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
@@ -115,19 +72,10 @@ input {
         font-size: 20px;
     }
     
-    img{
-        width: 536px;
-    }
-    p{
-        line-height: 80%;
-    }
-  
     input, textarea {
         padding: 10px 0px;
         margin-bottom: 20px;
         font-size: large;
     }
-    .contact_cta{
-        margin: 30px 0px;
-    }
+    
 }

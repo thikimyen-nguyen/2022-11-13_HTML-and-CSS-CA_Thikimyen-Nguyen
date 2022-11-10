@@ -3,12 +3,24 @@
 h1 span{
     display: block;
 }
+.about_image1 img {
+    width: 100%;
+}
+.about_image2 img{
+    width: 100%;
+    padding-left: 5px;
+}
+p {
+    line-height: 160%;
+    }
+
+
  /* Mobile */
- @media only screen and (max-width: 640px){
+ @media only screen and (max-width: 1007px){
     .main_about{
         display: grid;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(3, auto);
         grid-template-areas: 
         "title title title"
         ". image1 image1"
@@ -33,61 +45,8 @@ h1 span{
     .about_info2{
         grid-area: info2;
         padding: 0px 20px;
-    }
-    .about_image1 img {
-        width: 226px;
-    }
-    .about_image2 img{
-        width: 260px;
-        padding-left: 5px;
-    }
-    p {
-    line-height: 160%;
     }
  }
-
- /* Tablet */
-@media only screen and (min-width: 641px) and (max-width: 1007px){
-    .main_about{
-        display: grid;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-columns: auto auto auto;
-        grid-template-areas: 
-        "title title title"
-        ". image1 image1"
-        "info1 info1 info1"
-        "image2 image2 ."
-        "info2 info2 info2";
-    }
-    .title_slogan{
-        grid-area: title;
-        text-align: center;
-    }
-    .about_image1{
-        grid-area: image1;
-    }
-    .about_image2{
-        grid-area: image2;
-    }
-    .about_info1{
-        grid-area: info1;
-        padding: 0px 20px;
-    }
-    .about_info2{
-        grid-area: info2;
-        padding: 0px 20px;
-    }
-    .about_image1 img {
-        width: 400px;
-    }
-    .about_image2 img{
-        width: 500px;
-        padding-left: 5px;
-    }
-    p {
-    line-height: 160%;
-    }
-}
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
@@ -122,13 +81,5 @@ h1 span{
         grid-area: info2;
         padding: 0px 30px;
     }
-    .about_image1 img {
-        width: 567px;
-    }
-    .about_image2 img{
-        width: 605px;
-    }
-    p {
-    line-height: 160%;
-    }
+   
 }

@@ -33,7 +33,10 @@ a{
 }
 body{
     background-color: var(--dark_theme);  
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
+
 /* main background light grey*/
 .main_lightgrey{
     background-color:var(--light_grey);
@@ -116,7 +119,8 @@ footer ul, header ul{
     margin-bottom: 30px;
 }
 
-
+/* reference for screen size at https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+ */
 /* Mobile */
 @media only screen and (max-width: 640px){
     h1, h4 {
@@ -143,11 +147,8 @@ footer ul, header ul{
         width: 58px;
     }
     body{
-        display: grid;
-        grid-template-rows: auto 1fr auto;
         grid-gap: 10px;
         margin: 0px 15px;
-       
     }
     header nav li, footer nav li {
         display: inline;
@@ -181,6 +182,12 @@ footer ul, header ul{
     .cover {
         min-height: 193px;
     }
+
+    #review{
+        font-size: 13px;
+        align-self: center;
+    }  
+    
 }
 
 /* Tablet */
@@ -216,8 +223,6 @@ footer ul, header ul{
    
     body{
         margin: 20px 50px 0px 50px;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
         grid-gap: 20px;
        
     }
@@ -243,7 +248,7 @@ footer ul, header ul{
         
     }
     .products{
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(4, auto);
         gap: 20px;
         margin: 50px 0px;
     }
@@ -254,6 +259,11 @@ footer ul, header ul{
     .cover {
         min-height: 350px;
     }
+   
+    #review{
+        font-size: 20px;
+        align-self: center;
+    }  
 }
 
 /* Desktop */
@@ -293,8 +303,6 @@ footer ul, header ul{
     
     body{
         margin: 30px 115px 0px 115px;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
         grid-gap: 30px;
     }
     header nav li, footer nav li {
@@ -317,7 +325,7 @@ footer ul, header ul{
         width: 120px;
     }
     .products{
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: repeat(6, auto);
         gap: 50px;
         margin: 50px 0px;
     }
@@ -328,6 +336,12 @@ footer ul, header ul{
     .cover {
         min-height: 650px;
     }
+   
+    #review{
+        font-size: 30px;
+        align-self: center;
+    }  
+
 }
 
 
