@@ -1,11 +1,11 @@
 /* Global Style */
-.cover_content{
-    position: absolute;
-}
+
 .blockbuster{
     color: var(--grey);
 }
-
+.cover_content{
+    position: absolute;
+}
     /* Mobile */
 @media only screen and (max-width: 640px) {
    
