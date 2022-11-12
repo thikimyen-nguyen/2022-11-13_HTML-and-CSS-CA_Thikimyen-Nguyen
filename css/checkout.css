@@ -12,6 +12,7 @@ form, .date_on_card div{
     display: flex;
 }
 
+
 /* Mobile */
 @media only screen and (max-width: 640px){
     main{
