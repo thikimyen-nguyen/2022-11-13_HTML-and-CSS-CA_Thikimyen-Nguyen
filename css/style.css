@@ -88,11 +88,8 @@ header {
     border-radius: 8px;
     border-color: var(--blue);
 }
-.price_option button:hover{
-    background-color: var(--grey);
-}
-/* Reference for button color change on click https://codesandbox.io/s/suspicious-maria-135rel?file=/index.html&fbclid=IwAR0l-OTC225WXqrSxFjr1PyNPjiq44fHYrXnDLRiEqosNdyyvpQmXoXvGMc */
-.price_option button:focus {
+
+.price_select {
     background-color: var(--grey);
     color: black;
 }
