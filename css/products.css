@@ -27,6 +27,9 @@
     margin: auto;
     border-radius: 10px;
 }
+.product_image_desktop{
+    border-radius: 10px;
+}
 
 .price_option{
     display: grid;
@@ -34,13 +37,8 @@
     justify-content: left;
 }
 
-.purchase_button{
-    display: flex;
-    column-gap: 15px;
-    justify-content: center;
-}
 
-/* Mobile */
+/* Mobile and Tablet*/
 @media only screen and (max-width: 1007px){
     .product_image_desktop{
         display: none;
