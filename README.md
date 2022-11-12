@@ -1,9 +1,9 @@
 # 2022-11-13_HTML-and-CSS-CA_Thikimyen-Nguyen
 # Square Eyes - An online movie website
 
-## Description
+## Link to website, live on Netlify
 
-An in-depth paragraph about your project and overview of use.
+https://polite-donut-2b98ba.netlify.app/index.html
 
 ## Design file
 You can find the figma design of this project in the asset folder or at this link:
