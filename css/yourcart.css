@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style for mobile */
 main{
     display: flex;
     flex-direction: column;
@@ -49,27 +49,24 @@ p.price_bold{
     border-radius: 10px;
 }
 
-/* Mobile */
-@media only screen and (max-width: 640px){
-    main{
-        padding: 20px 0px 50px;
-        row-gap: 30px;
-    }
-    p {
-        font-size: 11px;
-    }
-   
-    .quantity_and_trash select{
-        width: 50px;
-    }
-    .quantity_and_trash i{
-        font-size: 20px;
-    }
-    .cart_info, .price_tag, .product_price{
-        row-gap: 10px;
-    }
-  
+main{
+    padding: 20px 0px 50px;
+    row-gap: 30px;
 }
+p {
+    font-size: 11px;
+}
+
+.quantity_and_trash select{
+    width: 50px;
+}
+.quantity_and_trash i{
+    font-size: 20px;
+}
+.cart_info, .price_tag, .product_price{
+    row-gap: 10px;
+}
+  
 
 /* Tablet */
 @media only screen and (min-width: 641px) {

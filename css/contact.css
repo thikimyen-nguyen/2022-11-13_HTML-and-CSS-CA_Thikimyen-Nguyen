@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style for mobile */
 address{
     font-style: normal;
 }
@@ -15,44 +15,38 @@ input, textarea {
     padding: 10px 0px;
     margin-bottom: 20px;
 }
-/* Mobile */
-@media only screen and (max-width: 1007px){
-    .main_contact{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "image address"
-        "inquery inquery";
-        padding: 20px 15px;
-        align-items: center;
-    }
-    .contact_image{
-        grid-area: image;
-        margin: auto;
-    }
-    address{
-        grid-area: address;
-        margin: auto;
-    }
-    .contact_inquery{
-        grid-area: inquery;
-        margin: 0px 10px;
-        font-size: 18px;
-    }
-    input, textarea {
-        font-size: small;
-    }
-   
-}
 
+.main_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "image address"
+    "inquery inquery";
+    padding: 20px 15px;
+    align-items: center;
+}
+.contact_image{
+    grid-area: image;
+    margin: auto;
+}
+address{
+    grid-area: address;
+    margin: auto;
+}
+.contact_inquery{
+    grid-area: inquery;
+    margin: 0px 10px;
+    font-size: 18px;
+}
+input, textarea {
+    font-size: small;
+}
+   
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
     .main_contact{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
         grid-template-areas: 
         "image address"
         "image inquery";
@@ -60,16 +54,10 @@ input, textarea {
         column-gap: 50px;
     }
     .contact_image{
-        grid-area: image;
         align-self: center;
-        margin: auto;
     }
-    address{
-        grid-area: address;
-       
-    }
+    
     .contact_inquery{
-        grid-area: inquery;
         font-size: 20px;
     }
     

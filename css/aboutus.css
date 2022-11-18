@@ -1,5 +1,5 @@
 
-/* Global Style */
+/* Global Style for mobile */
 h1 span{
     display: block;
 }
@@ -12,46 +12,41 @@ h1 span{
 }
 p {
     line-height: 160%;
-    }
-
-
- /* Mobile */
- @media only screen and (max-width: 1007px){
-    .main_about{
-        display: grid;
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: repeat(3, auto);
-        grid-template-areas: 
-        "title title title"
-        ". image1 image1"
-        "info1 info1 info1"
-        "image2 image2 ."
-        "info2 info2 info2";
-    }
-    .title_slogan{
-        grid-area: title;
-        text-align: center;
-    }
-    .about_image1{
-        grid-area: image1;
-    }
-    .about_image2{
-        grid-area: image2;
-    }
-    .about_info1{
-        grid-area: info1;
-        padding: 0px 20px;
-    }
-    .about_info2{
-        grid-area: info2;
-        padding: 0px 20px;
-    }
- }
+}
+.main_about{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: 
+    "title title title"
+    ". image1 image1"
+    "info1 info1 info1"
+    "image2 image2 ."
+    "info2 info2 info2";
+}
+.title_slogan{
+    grid-area: title;
+    text-align: center;
+}
+.about_image1{
+    grid-area: image1;
+}
+.about_image2{
+    grid-area: image2;
+}
+.about_info1{
+    grid-area: info1;
+    padding: 0px 20px;
+}
+.about_info2{
+    grid-area: info2;
+    padding: 0px 20px;
+}
+ 
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
     .main_about{
-        display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
         grid-template-areas: 
@@ -60,25 +55,18 @@ p {
         "image1 info2";
         column-gap: 50px;
     }
-    .title_slogan{
-        grid-area: title;
-        text-align: center;
-    }
+   
     .about_image1{
-        grid-area: image1;
         justify-self: center;
         padding-bottom: 50px;
     }
     .about_image2{
-        grid-area: image2;
         justify-self: center;
     }
     .about_info1{
-        grid-area: info1;
         padding: 0px 30px;
     }
     .about_info2{
-        grid-area: info2;
         padding: 0px 30px;
     }
    

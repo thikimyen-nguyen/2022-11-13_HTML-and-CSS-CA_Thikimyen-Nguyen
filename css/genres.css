@@ -1,4 +1,4 @@
-/* Global Style*/
+/* Global Style for mobile */
 main li{
     list-style: none;
 }
@@ -14,14 +14,13 @@ main li{
     padding: 0px;
     margin: 10px 20px;
 }
-/* Mobile */
-@media only screen and (max-width: 640px){
-    .genres_nav{
-        grid-template-columns: repeat(4, auto);
-        font-size: 13px;
-    }
-   
+
+.genres_nav{
+    grid-template-columns: repeat(4, auto);
+    font-size: 13px;
 }
+   
+
 
 /* Tablet */
 @media only screen and (min-width: 641px) {

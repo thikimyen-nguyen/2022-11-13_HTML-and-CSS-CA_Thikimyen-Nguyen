@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style for mobile */
 
 form, .date_on_card div{
     display: grid;
@@ -11,40 +11,31 @@ form, .date_on_card div{
 .date_on_card{
     display: flex;
 }
-
-
-/* Mobile */
-@media only screen and (max-width: 640px){
-    main{
-        display: flex;
-        text-align: center;   
-        flex-direction: column;
-        padding: 20px 15px 50px;
-        row-gap: 10px;
-    }
-    input {
-        padding: 8px 0px;
-        margin-bottom: 15px;
-        font-size: small;
-    }
-    .price_option{
-        margin: 20px 0px 20px;
-    }
-    
+main{
+    display: flex;
+    text-align: center;   
+    flex-direction: column;
+    padding: 20px 15px 50px;
+    row-gap: 10px;
 }
+input {
+    padding: 8px 0px;
+    margin-bottom: 15px;
+    font-size: small;
+}
+.price_option{
+    margin: 20px 0px 20px;
+}
+    
 
 /* Tablet */
 @media only screen and (min-width: 641px) {
     main{
-        display: flex;
-        text-align: center;   
-        flex-direction: column;
         padding: 30px 100px 100px;
         row-gap: 20px;
     }
     input {
         padding: 10px 0px;
-        margin-bottom: 15px;
         font-size: medium;
     }
     .price_option{

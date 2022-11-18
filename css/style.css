@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style for Mobile*/
 :root {
     --blue: #3DC9DA;
     --light_grey:  #EDEDED;
@@ -126,73 +126,69 @@ header nav li, footer nav li {
     display: inline;
 }
 
-/* reference for screen size at https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
- */
-/* Mobile */
-@media only screen and (max-width: 640px){
-    h1, h4 {
-        font-size: 15px;
-    }
-    h2, h3, p{
-        font-size: 13px;
-    }
-    .cta_blue, .cta_grey{
-        font-size: 15px;
-        padding: 5px 15px;
-        margin: 20px 0px;
-    }
-    
-    footer p{
-        font-size: 6px;
-        word-spacing: 0.2em;
-    }
-    footer {
-        width: 200px;
-    }
-    .logo{
-        height: 31.04px;
-        width: 58px;
-    }
-    body{
-        grid-gap: 10px;
-        margin: 0px 15px;
-    }
-    header nav li, footer nav li {
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .header_cart{
-        font-size: 20px;
-    }
-    .header_navbar{
-        margin-left: 20px;
-    }
-    .footer_navbar {
-        margin-left: 5px;
-    }
-    .cta_price{
-        font-size: 13px;
-    }
-    .products{
-        grid-template-columns: auto auto;
-        gap: 20px;
-        margin: 30px 0px;
-    }
-   
-    .products h4{
-        grid-column: 1/ span 2;
-    }
-    .cover {
-        min-height: 193px;
-    }
-
-    #review{
-        font-size: 13px;
-        align-self: center;
-    }  
-    
+h1, h4 {
+    font-size: 15px;
 }
+h2, h3, p{
+    font-size: 13px;
+}
+.cta_blue, .cta_grey{
+    font-size: 15px;
+    padding: 5px 15px;
+    margin: 20px 0px;
+}
+
+footer p{
+    font-size: 6px;
+    word-spacing: 0.2em;
+}
+footer {
+    width: 200px;
+}
+.logo{
+    height: 31.04px;
+    width: 58px;
+}
+body{
+    grid-gap: 10px;
+    margin: 0px 15px;
+}
+header nav li, footer nav li {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.header_cart{
+    font-size: 20px;
+}
+.header_navbar{
+    margin-left: 20px;
+}
+.footer_navbar {
+    margin-left: 5px;
+}
+.cta_price{
+    font-size: 13px;
+}
+.products{
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin: 30px 0px;
+}
+
+.products h4{
+    grid-column: 1/ span 2;
+}
+.cover {
+    min-height: 193px;
+}
+
+#review{
+    font-size: 13px;
+    align-self: center;
+}  
+    
+
 
 /* Tablet */
 @media only screen and (min-width: 641px) {
@@ -294,7 +290,7 @@ header nav li, footer nav li {
     }
     
     footer{
-        width: 610px;
+        width: 650px;
     }
     .logo{
         height: 110px;

@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style for mobile */
 
 .blockbuster{
     color: var(--grey);
@@ -6,21 +6,18 @@
 .cover_content{
     position: absolute;
 }
-    /* Mobile */
-@media only screen and (max-width: 640px) {
-   
-    .cover_content{
-        padding-left: 20px;
-        top:100px;
-    }
-    .blockbuster{  
-        font-size: 15px;
-    }
-    .showmore_icon{
-        font-size: 12px;
-    }
-   
+  
+.cover_content{
+    padding-left: 20px;
+    top:100px;
 }
+.blockbuster{  
+    font-size: 15px;
+}
+.showmore_icon{
+    font-size: 12px;
+}
+   
 
 /* Tablet */
 @media only screen and (min-width: 641px) {

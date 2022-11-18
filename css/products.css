@@ -1,4 +1,4 @@
-/* Global style */
+/* Global style for mobile */
 .selling_point{
     color: var(--blue);
 }
@@ -27,9 +27,6 @@
     margin: auto;
     border-radius: 10px;
 }
-.product_image_desktop{
-    border-radius: 10px;
-}
 
 .price_option{
     display: grid;
@@ -37,19 +34,15 @@
     justify-content: left;
 }
 
-
-/* Mobile and Tablet*/
-@media only screen and (max-width: 1007px){
-    .product_image_desktop{
-        display: none;
-    }
-    .price_option{
-        column-gap: 15px;
-        margin-left: 10px;
-    }
-    .price_option p{
-        margin-top: 5px;
-    }
+.product_image_desktop{
+    display: none;
+}
+.price_option{
+    column-gap: 15px;
+    margin-left: 10px;
+}
+.price_option p{
+    margin-top: 5px;
 }
 
 
@@ -57,6 +50,10 @@
 @media only screen and (min-width: 1008px){
     .product_image_mobile {
         display: none;
+    }
+    .product_image_desktop{
+        display: block;
+        border-radius: 10px;
     }
     p {
         line-height: 200%;
