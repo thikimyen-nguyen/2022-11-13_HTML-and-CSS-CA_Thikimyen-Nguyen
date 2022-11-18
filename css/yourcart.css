@@ -72,7 +72,7 @@ p.price_bold{
 }
 
 /* Tablet */
-@media only screen and (min-width: 641px) and (max-width: 1007px){
+@media only screen and (min-width: 641px) {
     main{
         padding: 20px 0px 70px;
         row-gap: 50px;

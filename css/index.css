@@ -23,7 +23,7 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 641px) and (max-width: 1007px){
+@media only screen and (min-width: 641px) {
    
     .cover_content{
         padding-left: 30px;
