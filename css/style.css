@@ -86,16 +86,15 @@ header {
     background-color: var(--grey);
 }
 .cta_price{
-    font-family: var(--nunito);
     background-color: black;
     color: var(--light_grey);
-    border-radius: 8px;
     border-color: var(--blue);
 }
 
 .price_select {
-    background-color: var(--grey);
-    color: black;
+    background-color: black;
+    color: var(--light_grey);
+    padding: 10px;
 }
 footer ul, header ul{
     padding: 0px;
@@ -108,7 +107,7 @@ footer ul, header ul{
 }
 .products img:hover {
     opacity: 0.8;
-   transform: scale(1.05);
+    transform: scale(1.05);
 }
 .products{
     display: grid;
@@ -136,7 +135,7 @@ header nav li, footer nav li {
 h1 {
     font-size: 15px;
 }
-h2, h3, p{
+h2, h3, p, .price_select {
     font-size: 13px;
 }
 .cta_blue, .cta_grey{
@@ -171,7 +170,7 @@ header nav li, footer nav li {
 .footer_navbar {
     margin-left: 5px;
 }
-.cta_price{
+.cta_price, .price_option button {
     font-size: 13px;
 }
 .products{
@@ -200,7 +199,7 @@ header nav li, footer nav li {
         font-size: 20px;
         font-weight: 600;
     }
-    p{
+    p, .price_select {
         font-size: 20px;
     }
     .cta_blue, .cta_grey{
@@ -237,7 +236,7 @@ header nav li, footer nav li {
     .footer_navbar {
         margin-left: 20px;
     }
-    .cta_price{
+    .cta_price, .price_option button {
         font-size: 20px;
     }
     .products{
@@ -259,21 +258,21 @@ header nav li, footer nav li {
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
-    h1{
+    h1 {
         font-size: 40px;
     }
-    h2{
+    h2 {
         font-size: 32px;
     }
-    h3{
+    h3 {
         font-size: 24px;
         font-weight: 600;
     }
-    h4{
+    h4 {
         font-size: 20px;
         font-weight: 600;
     }
-    p{
+    p, .price_select {
         font-size: 25px;
     }
     footer p{
@@ -309,7 +308,7 @@ header nav li, footer nav li {
     .footer_navbar {
         margin-left: 50px;
     }
-    .cta_price{
+    .cta_price, .price_option button {
         font-size: 30px;
     }
     .products{

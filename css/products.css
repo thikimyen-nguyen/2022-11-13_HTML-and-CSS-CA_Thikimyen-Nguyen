@@ -19,7 +19,7 @@
 .product_detail_info{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10px 10px 50px 10px;
+    margin: 10px;
     column-gap: 15px;
 }
 .product_image_mobile {
@@ -29,21 +29,17 @@
 }
 
 .price_option{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: left;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    font-size: 25px;
+    margin: 15px 0px ;
 }
 
 .product_image_desktop{
     display: none;
 }
-.price_option{
-    column-gap: 15px;
-    margin-left: 10px;
-}
-.price_option p{
-    margin-top: 5px;
-}
+
 
 
 /* Desktop */
@@ -66,15 +62,11 @@
     }
     
     .price_option{
-        column-gap: 25px;
-        margin-top: 100px;
-        margin-left: 10px;
+        font-size: 40px;
+        column-gap: 80px;
+        margin: 25px 0px;
     }
-    .price_option p{
-        margin-top: 5px;
-        font-size: 24px;
-        margin-bottom: 80px;
-    }
+    
     .product_detail img{
         width: 100%;
     }
