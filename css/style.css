@@ -24,7 +24,7 @@ footer a:hover, .footer_active {
     text-decoration: underline;
 }
 
-header a, i{
+header a, i {
     color: var(--blue);
 }
 
@@ -60,7 +60,11 @@ header {
     justify-content: start;
 }
 .header_cart {
-    justify-content: end;  
+    justify-content: end;
+    font-size: 20px;  
+}
+.header_cart i:hover {
+    color: var(--light_grey);
 }
 .cta {
     font-family: var(--nunito);
@@ -96,13 +100,15 @@ header {
 footer ul, header ul{
     padding: 0px;
 }
-.products h4{
-    margin: 0px;
-}
-.products img{
+
+.products img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+.products img:hover {
+    opacity: 0.8;
+   transform: scale(1.05);
 }
 .products{
     display: grid;
@@ -118,6 +124,7 @@ footer ul, header ul{
     opacity: 0.4;
     width: 100%;
     margin-bottom: 30px;
+    min-height: 193px;
 }
 input, select, textarea {
     border-radius: 5px;
@@ -126,7 +133,7 @@ header nav li, footer nav li {
     display: inline;
 }
 
-h1, h4 {
+h1 {
     font-size: 15px;
 }
 h2, h3, p{
@@ -158,9 +165,6 @@ header nav li, footer nav li {
     padding: 10px;
 }
 
-.header_cart{
-    font-size: 20px;
-}
 .header_navbar{
     margin-left: 20px;
 }
@@ -174,13 +178,6 @@ header nav li, footer nav li {
     grid-template-columns: auto auto;
     gap: 20px;
     margin: 30px 0px;
-}
-
-.products h4{
-    grid-column: 1/ span 2;
-}
-.cover {
-    min-height: 193px;
 }
 
 #review{
@@ -249,11 +246,9 @@ header nav li, footer nav li {
         margin: 50px 0px;
     }
    
-    .products h4{
-        grid-column: 1/ span 4;
-    }
     .cover {
         min-height: 350px;
+        margin-bottom: 60px;
     }
    
     #review{
@@ -323,11 +318,9 @@ header nav li, footer nav li {
         margin: 50px 0px;
     }
    
-    .products h4{
-        grid-column: 1/ span 6;
-    }
     .cover {
         min-height: 650px;
+        margin-bottom: 80px;
     }
    
     #review{

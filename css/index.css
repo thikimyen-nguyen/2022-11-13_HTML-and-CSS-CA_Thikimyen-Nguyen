@@ -17,7 +17,10 @@
 .showmore_icon{
     font-size: 12px;
 }
-   
+.showmore_icon:hover {
+    text-decoration: underline;
+}
+
 
 /* Tablet */
 @media only screen and (min-width: 641px) {
