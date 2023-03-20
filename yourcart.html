@@ -47,31 +47,24 @@
                 <a href="products/hobbandshaw.html"><img src="images/Fast_furious.jpeg" alt="film photo of hobbs and shaw"></a>
             </div>
             <div class="cart_info">
-                <div>
-                    <p>FAST & FURIOUS: HOBBS & SHAW</p>
+                <p>FAST & FURIOUS: HOBBS & SHAW</p>
+                <div class="price_option">
+                    <button class="option_one">HD</button>
+                    <button class="option_two">4K</button>
                 </div>
-                <div class="quantity_and_trash">
-                    <select name="quantity" id="quantity">
-                        <option value="hd" class="cta_price">HD</option>
-                        <option value="4k">4K</option>
-                    </select>   
-                    <i class="fa-solid fa-trash-can"></i>
-                </div>
+                <i class="fa-solid fa-trash-can"></i>
             </div>
-            
-            <div class="price_tag">
-                <p>Discount</p>
-                <p class="price_bold">Total:</p>
-            </div>
-            <div class="product_price">
-                <p>NOK 39</p>
-                <p>NOK 0</p>
-                <p class="price_bold">NOK 39</p>
-            </div> 
+            <p class="price_show"></p>
+            <p class="discount_tag">Discount: </p>
+            <p class="total">Total Price: </p>
+            <p class="discount"></p>
+            <p class="price_bold total_price"></p>
         </div>
         <div class="cta_buttons">
-            <a href="index.html" class="cta cta_grey">Continue Shopping</a>
-            <a href="checkout.html" class="cta cta_blue">Check out</a>
+            <button class="cta cta_grey">Continue Shopping</button>
+            <button class="cta cta_blue">Check out</button>
+            <!-- <a href="index.html" class="cta cta_grey">Continue Shopping</a>
+            <a href="checkout.html" class="cta cta_blue">Check out</a> -->
         </div>
        
     </main>
@@ -89,6 +82,7 @@
         </div>
         <p>&copy; 2022 SquareEyes AS (org.no: 000000-0000). All rights reserved.</p>
     </footer>
+    <script src="../js/components/price_option.js"></script>
     
 </body>
 </html>

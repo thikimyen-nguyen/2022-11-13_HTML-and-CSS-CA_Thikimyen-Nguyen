@@ -5,7 +5,6 @@
 .product_detail_title{
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: 10px;
     row-gap: 10px;
     column-gap: 15px;
 }
@@ -13,13 +12,11 @@
     grid-column: 1/ span2;
     margin: 0px;
 }
-.product_detail_title p{
-    margin: 0px;
-}
+
 .product_detail_info{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10px;
+    
     column-gap: 15px;
 }
 .product_image_mobile {
@@ -61,7 +58,7 @@
         column-gap: 50px;
     }
     
-    .price_option{
+    .price_option {
         font-size: 40px;
         column-gap: 80px;
         margin: 25px 0px;
