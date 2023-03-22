@@ -83,10 +83,10 @@ header {
     padding: 5px 15px;
     margin: 20px 0px;
 }
-.cta:hover {
+/* .cta:hover {
     cursor: pointer;
     background-color: var(--light_grey);
-} 
+}  */
 .cta_buttons{
     display: flex;
     column-gap: 15px;
@@ -95,8 +95,16 @@ header {
 .cta_blue{
     background-color:  var(--blue);    
 }
+.cta_blue:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
 .cta_grey{
     background-color: var(--grey);
+}
+.cta_grey:hover {
+    background-color: var(--light_grey);
+    cursor: pointer;
 }
 
 .cta_price{
@@ -197,7 +205,11 @@ header nav li, footer nav li {
 .hidden {
     display: none;
 }
-
+.error {
+    color: red;
+    font-size: 13px;
+    display: none;
+}
 
 /* Tablet */
 @media only screen and (min-width: 641px) {

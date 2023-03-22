@@ -1,38 +1,36 @@
 /* Global Style for mobile */
-
-form, .date_on_card div{
-    display: grid;
+h1 {
+    text-align: center;
+}
+main {
+    padding: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
     text-align: left;
 }
+#expireddate, #cvc {
+    width: 50%;
+}
 
-.date_on_card input{
-    width: 60%;
-}
-.date_on_card{
-    display: flex;
-}
-main{
-    display: flex;
-    text-align: center;   
-    flex-direction: column;
-    padding: 20px 15px 50px;
-    row-gap: 10px;
-}
 input {
     padding: 8px 0px;
     margin-bottom: 15px;
     font-size: small;
+    text-indent: 10px;
 }
 .price_option{
     margin: 20px 0px 20px;
 }
-    
+/* .error {
+    display: none;
+} */
 
 /* Tablet */
 @media only screen and (min-width: 641px) {
     main{
         padding: 30px 100px 100px;
-        row-gap: 20px;
     }
     input {
         padding: 10px 0px;
@@ -46,21 +44,13 @@ input {
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
-    main{
+   
+   .checkout_form {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr auto;
-        padding: 100px;
-        column-gap: 150px;
-    }
-   h1 {
-        grid-column: 1/span 2;
-        margin: auto;
-        margin-bottom: 50px;
-   }
-   .checkout_cta{
-        grid-column: 1/span 2;
-        margin-top: 50px;
+        padding: 30px;
+        column-gap: 100px;
    }
    input {
         padding: 15px 0px;

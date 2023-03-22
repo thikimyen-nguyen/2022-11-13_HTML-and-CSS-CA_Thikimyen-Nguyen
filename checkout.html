@@ -42,50 +42,61 @@
     </header>
     <main class="main_lightgrey"> 
         <h1>CHECK OUT</h1>
-        <section>
-            <h2>PAYMENT INFORMATION</h2>
-            <form method="post">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="birthday">Date of Birth</label>
-                <input type="date" name="birthday" id="birthday">
-                <p>You can create an account during check out</p>
-                <label for="password">Password (optional)</label>
-                <input type="password" name="password" id="password">
-            </form>
-
-        </section>
-        <section>
-            <h2>PAYMENT METHOD</h2>
-            <div class="price_option">
-                <button class="cta_price">Master</button>
-                <button class="cta_price price_select">Visa</button>
-            </div>
-            <!-- reference for input date https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date -->
-            <form method="post" >
-                <label for="cardnumber">Card Number</label>
-                <input type="number" name="cardnumber" id="cardnumber">
-                <label for="cardname">Name on card</label>
-                <input type="text" name="cardname" id="cardname">
-                <div class="date_on_card">
-                    <div>
-                        <label for="expireddate">Expired Date</label>
-                        <!-- reference for placeholder https://www.w3schools.com/csSref/sel_placeholder.php -->
-                        <input type="number" name="expireddate" id="expireddate" placeholder="MMYY">
-                    </div>
-                   <div>
-                    <label for="cvc">CVC</label>
-                    <input type="number" name="cvc" id="cvc" placeholder="123">  
-                   </div>
+        <section class="checkout_form">
+            <section>
+                <h2>PAYMENT INFORMATION</h2>
+                <form>
+                    <label for="name">Name
+                        <div class="error" id="name_error">*Please enter your name</div>
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="John Smith">
+                    <label for="email">Email
+                        <div class="error" id="email_error">*Please enter a valid email address</div>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="abc@squareeyes.com">
+                    <label for="dob">Date of Birth
+                        <div class="error" id="dob_error">*Please pick your date of birth</div>
+                    </label>
+                    <input type="date" name="dob" id="dob">
+                    <p>You can create an account during check out</p>
+                    <label for="password">Password (optional)
+                        <div class="error" id="password_error">*Your password must have at least 8 characters</div>
+                    </label>
+                    <input type="password" name="password" id="password">
+                </form>
+            </section>
+           
+            <section>
+                <h2>PAYMENT METHOD</h2>
+                <div class="price_option">
+                    <button class="card" onclick="paymentMaster()">Master</button>
+                    <button class="vipps" onclick="paymentVisa()">Visa</button>
                 </div>
-               
-            </form>
+                <form>
+                    <!-- reference for input date https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date -->
+                    <label for="card_number">Card Number
+                        <div class="error" id="card_error">*Please enter a valid card number</div>
+                    </label>
+                    <input type="number" name="card_number" id="card_number">
+                    <label for="card_name">Name on card
+                        <div class="error" id="card_name_error">*Please enter your name on card</div>
+                    </label>
+                    <input type="text" name="card_name" id="card_name">
+                    <label for="expired_date">Expired Date
+                        <div class="error" id="expired_error">*Please choose a valid date</div>
+                    </label>
+                    <!-- reference for placeholder https://www.w3schools.com/csSref/sel_placeholder.php -->
+                    <input type="month" name="expired_date" id="expired_date">
+                    <label for="cvc">CVC
+                        <div class="error" id="cvc_error">*CVC must be with 03 numbers</div>
+                    </label>
+                    <input type="number" name="cvc" id="cvc" placeholder="123"> 
+                </form>
+            </section>
         </section>
-        <div class="checkout_cta cta_buttons">
-            <a href="index.html" class="cta cta_grey">Continue Shopping</a>
-            <a href="checkoutsucess.html" class="cta cta_blue">Purchase</a>
+        <div class="cta_buttons">
+            <button class="cta cta_grey" onclick="getHome()">Continue Shopping</button>
+            <button type="submit" class="cta cta_blue" id="purchase" onclick="validateForm(event)">Purchase</button>
         </div>
     </main>
     <footer>
@@ -102,6 +113,7 @@
         </div>
         <p>&copy; 2022 SquareEyes AS (org.no: 000000-0000). All rights reserved.</p>
     </footer>
-    
+    <script src="js/components/cta_buttons.js"></script>
+    <script src="js/components/checkout_validate.js"></script>
 </body>
 </html>
