@@ -55,17 +55,25 @@
         </div>
         <div class="contact_inquery">
             <h1>Your Inquery</h1>
-            <form method="POST">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" >
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <form>
+                <label for="name">Name
+                    <div class="error" id="name_error">*Please enter your name</div>
+                </label>
+                <input type="text" name="name" id="name" placeholder="John Smith">
+                <label for="email">Email
+                    <div class="error" id="email_error">*Please enter a valid email address</div>
+                </label>
+                <input type="email" name="email" id="email" placeholder="abc@squareeyes.com">
+                <label for="subject">Subject
+                    <div class="error" id="subject_error">*Please enter a subject with at least 10 characters</div>
+                </label>
+                <input type="text" name="subject" id="subject" placeholder="Become a film maker">
+                <label for="message">Message
+                    <div class="error" id="message_error">*Please type your message with at least 20 characters</div>
+                </label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your text here..."></textarea>
             </form>   
-            <a href="contactsubmit.html" class="cta cta_blue">Submit</a>
+            <button class="cta cta_blue" onclick="validateContact(event)">Submit</button>
         </div>    
     </main>
     <footer>
@@ -82,6 +90,7 @@
         </div>
         <p>&copy; 2022 SquareEyes AS (org.no: 000000-0000). All rights reserved.</p>
     </footer>
-    
+    <script src="js/cta_buttons.js"></script>
+    <script src="js/form_validate.js"></script>
 </body>
 </html>

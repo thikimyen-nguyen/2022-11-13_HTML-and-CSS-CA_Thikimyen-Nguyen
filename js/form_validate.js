@@ -14,6 +14,10 @@ const expiredDate = document.querySelector("#expired_date");
 const expiredDateError = document.querySelector("#expired_error");
 const cvc = document.querySelector("#cvc");
 const cvcError = document.querySelector("#cvc_error");
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subject_error");
+const message = document.querySelector("#message");
+const messageError = document.querySelector("#message_error");
 
 
 function validateForm(event) {
@@ -105,3 +109,33 @@ function validateCvc(cvc) {
     }
 }
 
+function validateContact(event) {
+    event.preventDefault();
+    validateName(inputname);
+    validateEmail(email);
+    validateSubject(subject);
+    validateMessage(message);
+
+    if (validateName(inputname) &&  validateEmail(email) && validateSubject(subject) && validateMessage(message)) {
+        window.location.href = "contactsubmit.html";
+    }
+}
+
+function validateSubject(subject) {
+    if (checkLength(subject.value, 9) === true) {
+        subjectError.style.display = "none";
+        return true;
+    } else {
+        subjectError.style.display = "block";
+        return false;
+    }
+}
+function validateMessage(message) {
+    if (checkLength(message.value, 19) === true) {
+        messageError.style.display = "none";
+        return true;
+    } else {
+        messageError.style.display = "block";
+        return false;
+    }
+}

@@ -27,3 +27,9 @@ function paymentVisa() {
     card.classList.remove("cta_price");
     
 }
+function watchNow() {
+    window.location.href = "watchnow.html";
+}
+function submitContact() {
+    window.location.href = "contactsubmit.html";
+}
