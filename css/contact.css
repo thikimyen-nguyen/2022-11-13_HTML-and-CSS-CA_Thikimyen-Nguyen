@@ -16,7 +16,9 @@ input, textarea {
     margin-bottom: 20px;
     text-indent: 10px;
 }
-
+h1 {
+    text-align: center;
+}
 .main_contact{
     display: grid;
     grid-template-columns: 1fr 1fr;

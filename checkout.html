@@ -49,20 +49,20 @@
                     <label for="name">Name
                         <div class="error" id="name_error">*Please enter your name</div>
                     </label>
-                    <input type="text" name="name" id="name" placeholder="John Smith">
+                    <input type="text" name="name" id="name" placeholder="John Smith" aria-required="true">
                     <label for="email">Email
                         <div class="error" id="email_error">*Please enter a valid email address</div>
                     </label>
-                    <input type="email" name="email" id="email" placeholder="abc@squareeyes.com">
+                    <input type="email" name="email" id="email" placeholder="abc@squareeyes.com" aria-required="true">
                     <label for="dob">Date of Birth
                         <div class="error" id="dob_error">*Please pick your date of birth</div>
                     </label>
-                    <input type="date" name="dob" id="dob">
+                    <input type="date" name="dob" id="dob" aria-required="true" required>
                     <p>You can create an account during check out</p>
                     <label for="password">Password (optional)
                         <div class="error" id="password_error">*Your password must have at least 8 characters</div>
                     </label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" aria-required="false">
                 </form>
             </section>
            
@@ -77,20 +77,20 @@
                     <label for="card_number">Card Number
                         <div class="error" id="card_error">*Please enter a valid card number</div>
                     </label>
-                    <input type="number" name="card_number" id="card_number">
+                    <input type="number" name="card_number" id="card_number" aria-required="true">
                     <label for="card_name">Name on card
                         <div class="error" id="card_name_error">*Please enter your name on card</div>
                     </label>
-                    <input type="text" name="card_name" id="card_name">
+                    <input type="text" name="card_name" id="card_name" aria-required="true">
                     <label for="expired_date">Expired Date
                         <div class="error" id="expired_error">*Please choose a valid date</div>
                     </label>
                     <!-- reference for placeholder https://www.w3schools.com/csSref/sel_placeholder.php -->
-                    <input type="month" name="expired_date" id="expired_date">
+                    <input type="month" name="expired_date" id="expired_date" aria-required="true" required>
                     <label for="cvc">CVC
                         <div class="error" id="cvc_error">*CVC must be with 03 numbers</div>
                     </label>
-                    <input type="number" name="cvc" id="cvc" placeholder="123"> 
+                    <input type="number" name="cvc" id="cvc" placeholder="123" aria-required="true"> 
                 </form>
             </section>
         </section>
