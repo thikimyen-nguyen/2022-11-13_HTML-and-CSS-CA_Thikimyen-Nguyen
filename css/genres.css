@@ -24,7 +24,7 @@ main li{
 
 .genres_nav{
     grid-template-columns: repeat(2, auto);
-    font-size: 13px;
+    font-size: 15px;
    
 }
    
@@ -33,7 +33,6 @@ main li{
 @media only screen and (min-width: 401px) {
     .genres_nav{
         grid-template-columns: repeat(3, auto);
-        font-size: 13px;
     }
   
 }

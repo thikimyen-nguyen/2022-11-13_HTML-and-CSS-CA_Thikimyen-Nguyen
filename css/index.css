@@ -9,13 +9,13 @@
   
 .cover_content{
     padding-left: 20px;
-    top:100px;
+    top: 12%;
 }
 .blockbuster{  
     font-size: 15px;
 }
 .showmore_icon{
-    font-size: 12px;
+    font-size: 15px;
 }
 .showmore_icon:hover {
     text-decoration: underline;
