@@ -139,7 +139,7 @@ h2, h3, p {
     font-size: 15px;
 }
 p {
-    line-height: 1.7em;
+    line-height: 160%;
 }
 
 footer p{

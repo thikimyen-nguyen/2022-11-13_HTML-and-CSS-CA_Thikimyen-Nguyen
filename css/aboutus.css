@@ -10,9 +10,7 @@ h1 span{
     width: 100%;
     padding-left: 5px;
 }
-p {
-    line-height: 160%;
-}
+
 .main_about{
     display: grid;
     grid-template-rows: repeat(5, auto);
