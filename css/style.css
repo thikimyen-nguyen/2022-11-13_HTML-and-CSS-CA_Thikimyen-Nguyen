@@ -116,11 +116,11 @@ footer{
     justify-content: center;
 }
 .cover{
-    background: url(../images/coverFF.jpeg) no-repeat;
-    background-size: cover;
+    /* background: url(../images/coverFF.jpeg) no-repeat;
+    background-size: cover; */
     background-position-x: right;
     background-position-y: top;    
-    border-radius: 5px;
+    /* border-radius: 5px; */
     position: relative;
     opacity: 0.4;
     width: 100%;
