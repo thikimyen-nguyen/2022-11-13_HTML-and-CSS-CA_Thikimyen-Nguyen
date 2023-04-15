@@ -22,7 +22,7 @@ function createProductsThumbnails(products) {
     for (let i = 0; i < products.length; i++) {
         const image = products[i].images[0].src;
         const altText = products[i].images[0].alt;
-        productsContainer.innerHTML += `<img src="${image}" alt="${altText}">`    
+        productsContainer.innerHTML += `<a href="products/product_detail.html?id=${products[i].id}"><img src="${image}" alt="${altText}"></a>`    
         
     }
 };

@@ -19,10 +19,12 @@
     
     column-gap: 15px;
 }
-.product_image_mobile {
-    width: 100%;
-    margin: auto;
+.product_image img {
+    width: 30%;
     border-radius: 10px;
+}
+.product_image {
+    text-align: center;
 }
 
 .price_option{
@@ -33,21 +35,10 @@
     margin: 15px 0px ;
 }
 
-.product_image_desktop{
-    display: none;
-}
-
-
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
-    .product_image_mobile {
-        display: none;
-    }
-    .product_image_desktop{
-        display: block;
-        border-radius: 10px;
-    }
+   
     p {
         line-height: 200%;
     }
