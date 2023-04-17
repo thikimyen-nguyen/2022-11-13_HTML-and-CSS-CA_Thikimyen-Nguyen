@@ -19,13 +19,15 @@ function createHTML(product) {
     const alt = product.images[0].alt;
     const productName = product.name.toUpperCase();
     const releasedYear = getYear(product);
-   
+    const rating = getRating(product);
+    const genresList = getGenres(product);
+    
    
     
     productImageContainer.innerHTML += `<img src="${image}" alt="${alt}">`
     detailTitle.innerHTML += `<h1 class="title">${productName} <span>- ${releasedYear}</span></h1>
-                            <p>Action - Comedy - Adventure - Thriller</p>
-                            <i id="review" class="fa-sharp fa-solid fa-star"> </i>`
+                            <ul class="genres_list">${genresList}</ul>
+                            <i id="review" class="fa-sharp fa-solid fa-star"> ${rating}</i>`
 }
 
 
@@ -38,6 +40,38 @@ function getYear(product) {
          
         if (attributeID === 5) {
             return releasedYear
+        }
+    }
+}
+
+function getRating(product) {
+    const productAttributes = product.attributes;
+    for (let i = 0; i < productAttributes.length; i++) {
+        const attributeID = productAttributes[i].id;
+        
+        const rating = productAttributes[i].terms[0].name;
+         
+        if (attributeID === 6) {
+            return rating
+        }
+    }
+}
+function getGenres(product) {
+    
+    const productAttributes = product.attributes;
+    
+    for (let i = 0; i < productAttributes.length; i++) {
+        const genresID = productAttributes[i].id;
+        if (genresID === 10) {
+            const genresArray = productAttributes[i].terms;
+            console.log(genresArray);
+            let genresList = "";
+            for (let u = 0; u < genresArray.length; u++) {
+                const genres = productAttributes[i].terms[u].name;
+                console.log(genres);
+                genresList += "<li>" + genres + "</li>";
+            }
+            return genresList
         }
     }
 }

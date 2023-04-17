@@ -34,7 +34,16 @@
     font-size: 25px;
     margin: 15px 0px ;
 }
-
+.genres_list li {
+    display: inline-block;
+    padding: 7px;
+}
+.genres_list {
+    padding-left: 0px;
+}
+ul.genres_list li:not(:last-child) {
+    border-right: 0.5px solid white;
+  }
 
 /* Desktop */
 @media only screen and (min-width: 1008px){
