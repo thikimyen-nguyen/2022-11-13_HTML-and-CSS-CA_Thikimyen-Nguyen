@@ -5,10 +5,6 @@ const featuredProductBase = "?featured=true";
 const allProductsURL = apiBase + productsBase;
 const featuredProductsURL = allProductsURL + featuredProductBase;
 
-const productsContainer = document.querySelector(".products");
-const featuredContainer = document.querySelector(".featured_cover");
-const coverContentCOntainer = document.querySelector(".cover_content");
-
 // fetch an array of product data
 async function getProducts() {
    
@@ -18,10 +14,20 @@ async function getProducts() {
     return products;
         
 }
+
+// create products thumbnails
+
+const productsContainer = document.querySelector(".products");
+const featuredContainer = document.querySelector(".featured_cover");
+const coverContentCOntainer = document.querySelector(".cover_content");
+const productsHeader = document.querySelector(".products_header");
+const loader = document.querySelector(".loader");
+loader.innerHTML = "Loading..."
 function createProductsThumbnails(products) {
     for (let i = 0; i < products.length; i++) {
         const image = products[i].images[0].src;
         const altText = products[i].images[0].alt;
+        productsHeader.innerHTML = `<h2>Popular</h2>`
         productsContainer.innerHTML += `<a href="products/product_detail.html?id=${products[i].id}"><img src="${image}" alt="${altText}"></a>`    
         
     }
@@ -41,7 +47,7 @@ async function getFeaturedProducts() {
     return featuredProducts;
 }
 function getFeaturedCover(featuredProducts) {
-   
+    loader.style.display = "none";
     for (let i = 0; i < featuredProducts.length; i++) {
         const featuredImages = featuredProducts[i].images[1];
         if (!featuredImages) {
