@@ -2,12 +2,12 @@
 .selling_point{
     color: var(--blue);
 }
-.product_detail_title{
+/* .product_detail_title{
     display: grid;
     grid-template-columns: auto 1fr;
     row-gap: 10px;
     column-gap: 15px;
-}
+} */
 .title{
     grid-column: 1/ span2;
     margin: 0px;
