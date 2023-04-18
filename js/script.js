@@ -9,7 +9,6 @@ async function getProducts() {
    
     const response = await fetch(allProductsURL);
     const products = await response.json();
-    console.log(products);
     return products;
         
 }
@@ -18,10 +17,11 @@ async function getProducts() {
 
 const productsContainer = document.querySelector(".products");
 const featuredContainer = document.querySelector(".featured_cover");
-const coverContentCOntainer = document.querySelector(".cover_content");
+const coverContentContainer = document.querySelector(".cover_content");
 const productsHeader = document.querySelector(".products_header");
 const loader = document.querySelector(".loader");
 loader.innerHTML = "Loading..."
+
 function createProductsThumbnails(products) {
     for (let i = 0; i < products.length; i++) {
         const image = products[i].images[0].src;
@@ -31,6 +31,8 @@ function createProductsThumbnails(products) {
         
     }
 };
+// export {createProductsThumbnails, getProducts}
+
 // main
 async function createIndexHTML() {
     const products = await getProducts();
@@ -42,7 +44,6 @@ createIndexHTML();
 async function getFeaturedProducts() {
     const response = await fetch(featuredProductsURL);
     const featuredProducts = await response.json();
-    console.log(featuredProducts);
     return featuredProducts;
 }
 function getFeaturedCover(featuredProducts) {
@@ -54,7 +55,7 @@ function getFeaturedCover(featuredProducts) {
         }
         const featuredProductName = featuredImages.alt.toUpperCase();
         featuredContainer.innerHTML += `<img class="cover" src="${featuredImages.src}" alt="${featuredImages.alt}">`
-        coverContentCOntainer.innerHTML += `<p class="blockbuster" >Blockbuster Now</p>
+        coverContentContainer.innerHTML += `<p class="blockbuster" >Blockbuster Now</p>
                                             <h1>${featuredProductName}</h1>
                                             <a href="products/product_detail.html?id=${featuredProducts[i].id}">Show more</a>
                                             <a href="products/product_detail.html?id=${featuredProducts[i].id}" aria-label="read more"><i class="fa-solid fa-circle-chevron-right"></i></a>

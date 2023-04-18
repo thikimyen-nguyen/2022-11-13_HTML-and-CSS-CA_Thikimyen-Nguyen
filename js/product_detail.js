@@ -119,3 +119,7 @@ async function createDetailHTML() {
 }
 createDetailHTML();
 
+// import { createProductsThumbnails, getProducts } from "./script.js";
+
+//   createProductsThumbnails();
+//   getProducts();
