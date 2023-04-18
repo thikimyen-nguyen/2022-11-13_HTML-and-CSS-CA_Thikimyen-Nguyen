@@ -5,8 +5,6 @@ const param = new URLSearchParams(querryString);
 const id = param.get("id");
 const productDetailURL = productsURL + "/" + id;
 
-
-
 async function getProductDetail() {
     
     const response = await fetch(productDetailURL);
@@ -120,3 +118,4 @@ async function createDetailHTML() {
    
 }
 createDetailHTML();
+

@@ -1,11 +1,10 @@
 
+// fetch an array of products data
 const apiBase = "http://34.145.12.23";
 const productsBase = "/wp-json/wc/store/products";
 const featuredProductBase = "?featured=true";
 const allProductsURL = apiBase + productsBase;
 const featuredProductsURL = allProductsURL + featuredProductBase;
-
-// fetch an array of product data
 async function getProducts() {
    
     const response = await fetch(allProductsURL);
@@ -15,7 +14,7 @@ async function getProducts() {
         
 }
 
-// create products thumbnails
+// create products thumbnails html
 
 const productsContainer = document.querySelector(".products");
 const featuredContainer = document.querySelector(".featured_cover");
@@ -32,7 +31,7 @@ function createProductsThumbnails(products) {
         
     }
 };
-
+// main
 async function createIndexHTML() {
     const products = await getProducts();
     createProductsThumbnails(products);
@@ -57,8 +56,8 @@ function getFeaturedCover(featuredProducts) {
         featuredContainer.innerHTML += `<img class="cover" src="${featuredImages.src}" alt="${featuredImages.alt}">`
         coverContentCOntainer.innerHTML += `<p class="blockbuster" >Blockbuster Now</p>
                                             <h1>${featuredProductName}</h1>
-                                            <a href="products/hobbandshaw.html">Show more</a>
-                                            <a href="products/hobbandshaw.html" aria-label="read more about hobbs and shaw movie"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                                            <a href="products/product_detail.html?id=${featuredProducts[i].id}">Show more</a>
+                                            <a href="products/product_detail.html?id=${featuredProducts[i].id}" aria-label="read more"><i class="fa-solid fa-circle-chevron-right"></i></a>
                                             `
     }
         
