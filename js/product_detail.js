@@ -1,5 +1,5 @@
 // Fetch a single product data
-const productsURL = "http://34.145.12.23/wp-json/wc/store/products";
+const productsURL = "https://howareyounorway.no/wp-json/wc/store/products";
 const querryString = document.location.search;
 const param = new URLSearchParams(querryString);
 const id = param.get("id");

@@ -1,6 +1,6 @@
 
 // fetch an array of products data
-const apiBase = "http://34.145.12.23";
+const apiBase = "https://howareyounorway.no";
 const productsBase = "/wp-json/wc/store/products";
 const featuredProductBase = "?featured=true";
 const allProductsURL = apiBase + productsBase;
