@@ -1,6 +1,7 @@
 
 import { featuredProductsURL, getProducts } from "./components/API_endpoint.js";
 
+
 // create products thumbnails html
 const productsContainer = document.querySelector(".products");
 const featuredContainer = document.querySelector(".featured_cover");
