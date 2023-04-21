@@ -1,20 +1,11 @@
 // api call for genres list
-const genresApiURL = "https://howareyounorway.no/wp-json/wc/store/products/attributes/10/terms";
+import { genresApiURL, getProducts } from "./components/API_endpoint.js";
 
 async function getGenres() {
     const response = await fetch(genresApiURL);
     const genres = await response.json();
     return genres
-    
 }
-
-const productsURL = "https://howareyounorway.no/wp-json/wc/store/products";
-async function getProducts() {
-    const response = await fetch(productsURL);
-    const products = await response.json();
-    return products; 
-}
-
 
 function createGenresNav(genres) {
     for (let i = 0; i < genres.length; i++) {
@@ -54,8 +45,6 @@ createGenresNavHTML();
 async function createFilmsHTML() {
     const products = await getProducts();
     createRequestedProducts(products); 
-    
-   
 }
 createFilmsHTML();
 

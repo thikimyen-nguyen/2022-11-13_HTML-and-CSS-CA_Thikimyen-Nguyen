@@ -1,15 +1,20 @@
 // Fetch a single product data
-const productsURL = "https://howareyounorway.no/wp-json/wc/store/products";
+import { allProductsURL } from "./components/API_endpoint.js";;
 const querryString = document.location.search;
 const param = new URLSearchParams(querryString);
 const id = param.get("id");
-const productDetailURL = productsURL + "/" + id;
+const productDetailURL = allProductsURL + "/" + id;
 
 async function getProductDetail() {
-    
-    const response = await fetch(productDetailURL);
-    const product = await response.json();
-    return product
+    try {
+        const response = await fetch(productDetailURL);
+        const product = await response.json();
+        return product
+        
+    } catch (error) {
+        detailTitle.innerHTML = message("error_fetching", error)
+    }
+  
 }
 
 // Create HTML
@@ -40,7 +45,8 @@ function createHTML(product) {
                             <p>${director}</p>
                             <p>CASTS:</p>
                             <p>${casts}</p>
-                            <div class="title">${description}</div>     
+                            <div class="title">${description}</div>
+                           
                             `
 }
 
@@ -119,7 +125,3 @@ async function createDetailHTML() {
 }
 createDetailHTML();
 
-// import { createProductsThumbnails, getProducts } from "./script.js";
-
-//   createProductsThumbnails();
-//   getProducts();

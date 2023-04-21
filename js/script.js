@@ -1,20 +1,7 @@
 
-// fetch an array of products data
-const apiBase = "https://howareyounorway.no";
-const productsBase = "/wp-json/wc/store/products";
-const featuredProductBase = "?featured=true";
-const allProductsURL = apiBase + productsBase;
-const featuredProductsURL = allProductsURL + featuredProductBase;
-async function getProducts() {
-   
-    const response = await fetch(allProductsURL);
-    const products = await response.json();
-    return products;
-        
-}
+import { featuredProductsURL, getProducts } from "./components/API_endpoint.js";
 
 // create products thumbnails html
-
 const productsContainer = document.querySelector(".products");
 const featuredContainer = document.querySelector(".featured_cover");
 const coverContentContainer = document.querySelector(".cover_content");
@@ -31,20 +18,24 @@ function createProductsThumbnails(products) {
         
     }
 };
-// export {createProductsThumbnails, getProducts}
 
-// main
+// call functions
 async function createIndexHTML() {
-    const products = await getProducts();
-    createProductsThumbnails(products);
+        const products = await getProducts();
+        createProductsThumbnails(products);   
 }
 createIndexHTML();
 
 // Filter Featured products
 async function getFeaturedProducts() {
-    const response = await fetch(featuredProductsURL);
-    const featuredProducts = await response.json();
-    return featuredProducts;
+    try {
+        const response = await fetch(featuredProductsURL);
+        const featuredProducts = await response.json();
+        return featuredProducts;
+    } catch (error) {
+        featuredContainer.innerHTML = message("error_fetching", error) 
+    }
+    
 }
 function getFeaturedCover(featuredProducts) {
     loader.style.display = "none";
@@ -55,7 +46,7 @@ function getFeaturedCover(featuredProducts) {
         }
         const featuredProductName = featuredImages.alt.toUpperCase();
         featuredContainer.innerHTML += `<img class="cover" src="${featuredImages.src}" alt="${featuredImages.alt}">`
-        coverContentContainer.innerHTML += `<p class="blockbuster" >Blockbuster Now</p>
+        coverContentContainer.innerHTML += `<p class="blockbuster" >Featured Movie</p>
                                             <h1>${featuredProductName}</h1>
                                             <a href="products/product_detail.html?id=${featuredProducts[i].id}">Show more</a>
                                             <a href="products/product_detail.html?id=${featuredProducts[i].id}" aria-label="read more"><i class="fa-solid fa-circle-chevron-right"></i></a>
