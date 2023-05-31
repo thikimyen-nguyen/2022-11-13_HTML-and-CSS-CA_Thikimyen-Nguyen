@@ -1,4 +1,4 @@
-# 2022-11-13_HTML-and-CSS-CA_Thikimyen-Nguyen
+
 # Square Eyes - An online movie website
 
 ## Link to website, live on Netlify
@@ -9,29 +9,76 @@ https://polite-donut-2b98ba.netlify.app/index.html
 You can find the figma design of this project in the asset folder or at this link:
 https://www.figma.com/file/EQORtXQPLEsfxZndwbq2YO/Design-CA?node-id=0%3A1
 
-## References (some are mentioned in the .css and .html files)
+# Your project title
 
-To adjust opacity of image
-https://css-tricks.com/snippets/css/transparent-background-images/
+![image](http://howareyounorway.no/wp-content/uploads/2023/04/logo.png)
 
-To use icon
-https://www.w3schools.com/css/css_icons.asp
-https://fontawesome.com/
+A simple overview of the use/purpose of the project.
 
-Screen size
-https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+## Description
 
-Images resources
-https://www.amazon.com/Fast-Furious-Presents-Hobbs-Shaw/dp/B07VGTYC9G
+Add a more detailed description of what your project entails and set out to do.
 
-https://www.freepik.com/free-vector/happy-family-watching-tv-night-flat-vector-illustration-mother-father-kids-cat-sitting-sofa-living-room-watching-television-movie-spending-weekend-together-entertainment-concept_26877062.htm#query=watching%20movie%20at%20home&position=1&from_view=search
+You can add some bullet points if you'd like to:
 
-https://www.freepik.com/free-vector/film-crew-movie-production-studio-staff_29314759.htm#query=film%20producer&position=9&from_view=search
+- List item 1
+- List item 2
+- List item 3
 
-https://www.freepik.com/free-vector/contact-us-concept-landing-page_4661524.htm#page=3&query=contact&position=23&from_view=search
+## Built With
 
-Movie info from Plex.tv and justwatch.com
+You can list a the tech stack that you've used over here
 
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com)
+
+## Getting Started
+
+### Installing
+
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contributing
+
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+
+## Contact
+
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+
+[My Twitter page](www.twitter.com)
+
+[My LinkedIn page](www.linkedin.com)
+
+## License
+
+You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+
+## Acknowledgments
+
+This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
 
 
 
