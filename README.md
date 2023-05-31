@@ -54,8 +54,8 @@ https://www.figma.com/file/EQORtXQPLEsfxZndwbq2YO/Design-CA?node-id=0%3A1
 
 ## Contact
 
-My Email: nguyenthikimyen25@gmail.com
-[My LinkedIn page](https://www.linkedin.com/in/yen-nguyen-76340440/)
+- My Email: nguyenthikimyen25@gmail.com
+- [My LinkedIn page](https://www.linkedin.com/in/yen-nguyen-76340440/)
 
 
 
