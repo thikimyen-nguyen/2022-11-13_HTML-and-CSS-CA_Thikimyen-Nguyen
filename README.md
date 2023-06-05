@@ -1,13 +1,18 @@
 
-# Square Eyes - An online movie website
+# Square Eyes
 
 ![image](http://howareyounorway.no/wp-content/uploads/2023/05/cross-course-project.jpg)
 
-A simple overview of this project.
+An online movie website which connects film-lovers.
 
 ## Description
 
-This is my cross-course project which is run through several course assignments during the first year. There are three assigned project themes and I picked Square Eyes, an online movie website.
+This is my cross-course project which is run through several course assignments during the first year. There are three assigned project themes and I picked Square Eyes, an online movie website. It includes:
+- A Homepage with featured products and products as thumbnails
+- Collection and Gernes pages with sorted lists
+- An About Us page
+- A Contact page
+- A detailed product page
 
 This site has been developed so far as following: 
 
@@ -30,16 +35,10 @@ This site has been developed so far as following:
 
 ### Installing
 
-1. Clone the repo:
+Clone the repo at
 
 ```bash
 git@github.com:thikimyen-nguyen/2022-11-13_HTML-and-CSS-CA_Thikimyen-Nguyen.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
 ```
 
 ### Link to website, live on Netlify
