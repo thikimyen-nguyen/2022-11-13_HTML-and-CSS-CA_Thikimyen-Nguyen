@@ -1,36 +1,58 @@
-# 2022-11-13_HTML-and-CSS-CA_Thikimyen-Nguyen
-# Square Eyes - An online movie website
 
-## Link to website, live on Netlify
+# Square Eyes
+
+![image](http://howareyounorway.no/wp-content/uploads/2023/05/cross-course-project.jpg)
+
+An online movie website which connects film-lovers.
+
+## Description
+
+This is my cross-course project which is run through several course assignments during the first year. There are three assigned project themes and I picked Square Eyes, an online movie website. It includes:
+- A Homepage with featured products and products as thumbnails
+- Collection and Gernes pages with sorted lists
+- An About Us page
+- A Contact page
+- A detailed product page
+
+This site has been developed so far as following: 
+
+- Making prototype in Figma for Design
+- Building the site with pure HTML and CSS
+- Modifying the site content in plain Javascript with fetching products from API
+- Conducting usibility tests for Interaction Design
+- Managing content via Wordpress (Headless mode)
+- Hosting the site
+
+## Built With
+
+- Figma
+- HTML5
+- CSS3
+- Javascript
+- Wordpress
+
+## Getting Started
+
+### Installing
+
+Clone the repo at
+
+```bash
+git@github.com:thikimyen-nguyen/2022-11-13_HTML-and-CSS-CA_Thikimyen-Nguyen.git
+```
+
+### Link to website, live on Netlify
 
 https://polite-donut-2b98ba.netlify.app/index.html
 
-## Design file
+### Design file
 You can find the figma design of this project in the asset folder or at this link:
 https://www.figma.com/file/EQORtXQPLEsfxZndwbq2YO/Design-CA?node-id=0%3A1
 
-## References (some are mentioned in the .css and .html files)
+## Contact
 
-To adjust opacity of image
-https://css-tricks.com/snippets/css/transparent-background-images/
-
-To use icon
-https://www.w3schools.com/css/css_icons.asp
-https://fontawesome.com/
-
-Screen size
-https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
-
-Images resources
-https://www.amazon.com/Fast-Furious-Presents-Hobbs-Shaw/dp/B07VGTYC9G
-
-https://www.freepik.com/free-vector/happy-family-watching-tv-night-flat-vector-illustration-mother-father-kids-cat-sitting-sofa-living-room-watching-television-movie-spending-weekend-together-entertainment-concept_26877062.htm#query=watching%20movie%20at%20home&position=1&from_view=search
-
-https://www.freepik.com/free-vector/film-crew-movie-production-studio-staff_29314759.htm#query=film%20producer&position=9&from_view=search
-
-https://www.freepik.com/free-vector/contact-us-concept-landing-page_4661524.htm#page=3&query=contact&position=23&from_view=search
-
-Movie info from Plex.tv and justwatch.com
+- My Email: nguyenthikimyen25@gmail.com
+- [My LinkedIn page](https://www.linkedin.com/in/yen-nguyen-76340440/)
 
 
 
