@@ -1,4 +1,4 @@
-const apiBase = "https://howareyounorway.no";
+const apiBase = "https://yen-nguyen.no";
 const productsBase = "/wp-json/wc/store/products";
 export const featuredProductBase = "?featured=true";
 export const allProductsURL = apiBase + productsBase;
