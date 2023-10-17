@@ -1,10 +1,11 @@
 // api call for genres list
 import {getProducts } from "./components/API_endpoint.js";
 
-const collectionURL = "https://howareyounorway.no/wp-json/wc/store/products/attributes/11/terms";
+const collectionURL = "https://yen-nguyen.no/wp-json/wc/store/products/attributes/6/terms";
 async function getCollections() {
     const response = await fetch(collectionURL);
     const collections = await response.json();
+    console.log(collections)
     return collections
 }
 
@@ -54,12 +55,13 @@ const productsContainer = document.querySelector(".products");
 function createRequestedProducts(products) {
     for (let i = 0; i < products.length; i++) {
         const attributesArray = products[i].attributes;
+        
         for (let u = 0; u < attributesArray.length; u++) {
             const attributeID = attributesArray[u].id;
-           
-            if (attributeID === 11) {
+            console.log(attributeID);
+            if (attributeID === 6) {
                 const collectionTerms = attributesArray[u].terms;
-                console.log(collectionTerms);
+                
                 for (let e = 0; e < collectionTerms.length; e++) {
                     const collectionID = collectionTerms[e].id;
                     const requestedID = getRequestedCollectionID();
