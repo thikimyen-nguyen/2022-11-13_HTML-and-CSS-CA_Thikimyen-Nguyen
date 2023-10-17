@@ -9,6 +9,7 @@ async function getProductDetail() {
     try {
         const response = await fetch(productDetailURL);
         const product = await response.json();
+        console.log(product)
         return product
         
     } catch (error) {
@@ -56,7 +57,7 @@ function getYear(product) {
     for (let i = 0; i < productAttributes.length; i++) {
         const attributeID = productAttributes[i].id;
         const releasedYear = productAttributes[i].terms[0].name;
-        if (attributeID === 5) {
+        if (attributeID === 1) {
             return releasedYear
         }
     }
@@ -67,32 +68,26 @@ function getRating(product) {
     for (let i = 0; i < productAttributes.length; i++) {
         const attributeID = productAttributes[i].id;
         const rating = productAttributes[i].terms[0].name;
-        if (attributeID === 6) {
+        if (attributeID === 2) {
             return rating
         }
     }
 }
 function getGenres(product) {
-    const productAttributes = product.attributes;
-    for (let i = 0; i < productAttributes.length; i++) {
-        const genresID = productAttributes[i].id;
-        if (genresID === 10) {
-            const genresArray = productAttributes[i].terms;
-            let genresList = "";
-            for (let u = 0; u < genresArray.length; u++) {
-                const genres = productAttributes[i].terms[u].name;
-                genresList += "<li>" + genres + "</li>";
-            }
-            return genresList
-        }
-    }
+    const genresArray = product.categories;
+     // turn genres array to text
+    const genreArray = genresArray.map((genres) => {
+        return `${genres.name}`
+    })
+    const genres = genreArray.join(", ");
+    return genres
 }
 function getProducer(product) {
     const productAttributes = product.attributes;
     for (let i = 0; i < productAttributes.length; i++) {
         const attributeID = productAttributes[i].id;
         const producer = productAttributes[i].terms[0].name;
-        if (attributeID === 7) {
+        if (attributeID === 4) {
             return producer
         }
     }
@@ -102,7 +97,7 @@ function getDirector(product) {
     for (let i = 0; i < productAttributes.length; i++) {
         const attributeID = productAttributes[i].id;
         const director = productAttributes[i].terms[0].name;
-        if (attributeID === 8) {
+        if (attributeID === 5) {
             return director
         }
     }
@@ -112,7 +107,7 @@ function getCasts(product) {
     for (let i = 0; i < productAttributes.length; i++) {
         const attributeID = productAttributes[i].id;
         const casts = productAttributes[i].terms[0].name;
-        if (attributeID === 9) {
+        if (attributeID === 3) {
             return casts
         }
     }
