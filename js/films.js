@@ -51,24 +51,20 @@ createFilmsHTML();
 // create genres products list
 const productsContainer = document.querySelector(".products");
 function createRequestedProducts(products) {
+    console.log(products)
     for (let i = 0; i < products.length; i++) {
-        const attributesArray = products[i].attributes;
-        
-        for (let u = 0; u < attributesArray.length; u++) {
-            const attributeID = attributesArray[u].id;
-           
-            if (attributeID === 10) {
-                const genreTerms = attributesArray[u].terms;
-                for (let e = 0; e < genreTerms.length; e++) {
-                    const genreID = genreTerms[e].id;
-                    const requestedID = getRequestedGenreID();
-                    if (genreID === requestedID) {
+        const genresArray = products[i].categories;
+        console.log(genresArray)
+        for (let u = 0; u < genresArray.length; u++) {
+            const genresID = genresArray[u].id;
+            console.log(genresID)
+            const requestedID = getRequestedGenreID();
+                    if (genresID === requestedID) {
                         const image = products[i].images[0].src;
                         const altText = products[i].images[0].alt;
                         productsContainer.innerHTML += `<a href="../products/product_detail.html?id=${products[i].id}"><img src="${image}" alt="${altText}"></a>`
                     }
-                }
-            }
+            
         }
     } 
 };

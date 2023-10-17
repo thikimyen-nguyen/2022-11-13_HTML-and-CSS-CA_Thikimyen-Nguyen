@@ -3,7 +3,7 @@ const productsBase = "/wp-json/wc/store/products";
 export const featuredProductBase = "?featured=true";
 export const allProductsURL = apiBase + productsBase;
 export const featuredProductsURL = allProductsURL + featuredProductBase;
-const genresApiBase = "/attributes/10/terms";
+const genresApiBase = "/categories";
 export const genresApiURL = allProductsURL + genresApiBase
 // fetch an array of products data
 export async function getProducts() {
