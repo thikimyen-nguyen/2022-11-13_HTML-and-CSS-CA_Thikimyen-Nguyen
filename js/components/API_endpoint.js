@@ -8,7 +8,7 @@ export const genresApiURL = allProductsURL + genresApiBase
 // fetch an array of products data
 export async function getProducts() {
     try {
-     const response = await fetch(allProductsURL);
+     const response = await fetch("https://polite-donut-2b98ba.netlify.app/api");
      const products = await response.json();
      console.log(products)
      return products;
